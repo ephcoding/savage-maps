@@ -1,0 +1,1788 @@
+{
+	"@context": [
+		"https://geojson.org/geojson-ld/geojson-context.jsonld",
+		{
+			"@version": "1.1",
+			"wx": "https://api.weather.gov/ontology#",
+			"@vocab": "https://api.weather.gov/ontology#"
+		}
+	],
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfc4a659785586647af6c1966e98b739cd93ba67.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-92.37, 30.7],
+						[-92.34, 30.82],
+						[-92.08, 30.85],
+						[-92.14, 30.59],
+						[-92.37, 30.7]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfc4a659785586647af6c1966e98b739cd93ba67.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.cfc4a659785586647af6c1966e98b739cd93ba67.001.1",
+				"areaDesc": "Evangeline, LA; St. Landry, LA",
+				"geocode": {
+					"SAME": ["022039", "022097"],
+					"UGC": ["LAC039", "LAC097"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/LAC039",
+					"https://api.weather.gov/zones/county/LAC097"
+				],
+				"references": [],
+				"sent": "2022-08-22T19:14:00-05:00",
+				"effective": "2022-08-22T19:14:00-05:00",
+				"onset": "2022-08-22T19:14:00-05:00",
+				"expires": "2022-08-22T19:45:00-05:00",
+				"ends": "2022-08-22T19:45:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Lake Charles LA",
+				"headline": "Tornado Warning issued August 22 at 7:14PM CDT until August 22 at 7:45PM CDT by NWS Lake Charles LA",
+				"description": "The National Weather Service in Lake Charles has issued a\n\n* Tornado Warning for...\nEast central Evangeline Parish in central Louisiana...\nNorth central St. Landry Parish in central Louisiana...\n\n* Until 745 PM CDT.\n\n* At 714 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Chicot State Park, or near Ville Platte, moving\neast at 10 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nVille Platte around 725 PM CDT.\nIndian Lake around 735 PM CDT.\nWhiteville and Grand Prairie around 745 PM CDT.\n\nThis includes Interstate 49 between mile markers 34 and 44.",
+				"instruction": "TAKE COVER NOW! Move to an interior room on the lowest floor of a\nsturdy building. Avoid windows. If you are outdoors, in a mobile\nhome, or in a vehicle, move to the closest substantial shelter and\nprotect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORLCH"],
+					"WMOidentifier": ["WFUS54 KLCH 230014"],
+					"eventMotionDescription": [
+						"2022-08-23T00:14:00-00:00...storm...279DEG...7KT...30.75,-92.29"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KLCH.TO.W.0023.220823T0014Z-220823T0045Z/"],
+					"eventEndingTime": ["2022-08-23T00:45:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 7:45 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 7:45 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6a91f1a2ec517d24585722e4f39b8c5f8124850f.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-95.15, 32.76],
+						[-94.95, 32.699999999999996],
+						[-95.10000000000001, 32.55],
+						[-95.14000000000001, 32.559999999999995],
+						[-95.15000000000002, 32.56999999999999],
+						[-95.15, 32.76]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6a91f1a2ec517d24585722e4f39b8c5f8124850f.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.6a91f1a2ec517d24585722e4f39b8c5f8124850f.001.1",
+				"areaDesc": "Upshur, TX",
+				"geocode": {
+					"SAME": ["048459"],
+					"UGC": ["TXC459"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/TXC459"],
+				"references": [],
+				"sent": "2022-08-22T10:59:00-05:00",
+				"effective": "2022-08-22T10:59:00-05:00",
+				"onset": "2022-08-22T10:59:00-05:00",
+				"expires": "2022-08-22T11:08:00-05:00",
+				"ends": "2022-08-22T11:00:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Shreveport LA",
+				"headline": "Tornado Warning issued August 22 at 10:59AM CDT until August 22 at 11:00AM CDT by NWS Shreveport LA",
+				"description": "The storm which prompted the warning has weakened below severe\nlimits, and no longer appears capable of producing a tornado.\nTherefore, the warning will be allowed to expire.",
+				"instruction": null,
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["SVSSHV"],
+					"WMOidentifier": ["WWUS54 KSHV 221559"],
+					"NWSheadline": [
+						"THE TORNADO WARNING FOR SOUTHWESTERN UPSHUR COUNTY WILL EXPIRE AT 1100 AM CDT"
+					],
+					"eventMotionDescription": [
+						"2022-08-22T15:58:00-00:00...storm...207DEG...25KT...32.69,-95.07"
+					],
+					"BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.EXP.KSHV.TO.W.0051.000000T0000Z-220822T1600Z/"],
+					"eventEndingTime": ["2022-08-22T16:00:00+00:00"],
+					"expiredReferences": [
+						"w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.051ad308cef9e6fe2535ed826dc9fda9885dfbaa.002.1,2022-08-22T10:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b91fa0909b6ad0006595a72f831086bdfe73102a.001.1,2022-08-22T10:31:00-05:00"
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b91fa0909b6ad0006595a72f831086bdfe73102a.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-95.15, 32.47],
+						[-95.25, 32.5],
+						[-95.15, 32.76],
+						[-94.95, 32.699999999999996],
+						[-95.15, 32.47]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b91fa0909b6ad0006595a72f831086bdfe73102a.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.b91fa0909b6ad0006595a72f831086bdfe73102a.001.1",
+				"areaDesc": "Smith, TX; Upshur, TX; Wood, TX",
+				"geocode": {
+					"SAME": ["048423", "048459", "048499"],
+					"UGC": ["TXC423", "TXC459", "TXC499"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/TXC423",
+					"https://api.weather.gov/zones/county/TXC459",
+					"https://api.weather.gov/zones/county/TXC499"
+				],
+				"references": [],
+				"sent": "2022-08-22T10:31:00-05:00",
+				"effective": "2022-08-22T10:31:00-05:00",
+				"onset": "2022-08-22T10:31:00-05:00",
+				"expires": "2022-08-22T11:00:00-05:00",
+				"ends": "2022-08-22T11:00:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Shreveport LA",
+				"headline": "Tornado Warning issued August 22 at 10:31AM CDT until August 22 at 11:00AM CDT by NWS Shreveport LA",
+				"description": "The National Weather Service in Shreveport has issued a\n\n* Tornado Warning for...\nNortheastern Smith County in northeastern Texas...\nSoutheastern Wood County in northeastern Texas...\nSouthwestern Upshur County in northeastern Texas...\n\n* Until 1100 AM CDT.\n\n* At 1030 AM CDT, a confirmed tornado was located near Winona, or 13\nmiles west of Gladewater, moving northeast at 30 mph.\n\nHAZARD...Damaging tornado.\n\nSOURCE...Law enforcement confirmed tornado. At 930 AM, law\nenforcement confirmed a tornado on the ground at Winona\nHigh School, moving northeast.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* The tornado will be near...\nBig Sandy around 1040 AM CDT.\n\nOther locations impacted by this tornadic thunderstorm include\nPritchett and Winona.",
+				"instruction": "To repeat, a tornado is on the ground. TAKE COVER NOW! Move to a\nbasement or an interior room on the lowest floor of a sturdy\nbuilding. Avoid windows. If you are outdoors, in a mobile home, or in\na vehicle, move to the closest substantial shelter and protect\nyourself from flying debris.\n\nHeavy rainfall may hide this tornado. Do not wait to see or hear the\ntornado. TAKE COVER NOW!",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORSHV"],
+					"WMOidentifier": ["WFUS54 KSHV 221531"],
+					"eventMotionDescription": [
+						"2022-08-22T15:30:00-00:00...storm...207DEG...25KT...32.54,-95.17"
+					],
+					"maxHailSize": ["0.00"],
+					"tornadoDetection": ["OBSERVED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KSHV.TO.W.0051.220822T1531Z-220822T1600Z/"],
+					"eventEndingTime": ["2022-08-22T16:00:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 11:00 AM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 11:00 AM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58048b4f3322a05069339d17094cbb139170835d.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-97.24, 32.09],
+						[-97.19999999999999, 32.24],
+						[-96.89999999999999, 32.2299999],
+						[-96.95999989999999, 32.010000000000005],
+						[-97.24, 32.09]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58048b4f3322a05069339d17094cbb139170835d.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.58048b4f3322a05069339d17094cbb139170835d.001.1",
+				"areaDesc": "Ellis, TX; Hill, TX",
+				"geocode": {
+					"SAME": ["048139", "048217"],
+					"UGC": ["TXC139", "TXC217"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/TXC139",
+					"https://api.weather.gov/zones/county/TXC217"
+				],
+				"references": [],
+				"sent": "2022-08-22T00:51:00-05:00",
+				"effective": "2022-08-22T00:51:00-05:00",
+				"onset": "2022-08-22T00:51:00-05:00",
+				"expires": "2022-08-22T01:15:00-05:00",
+				"ends": "2022-08-22T01:15:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Fort Worth TX",
+				"headline": "Tornado Warning issued August 22 at 12:51AM CDT until August 22 at 1:15AM CDT by NWS Fort Worth TX",
+				"description": "The National Weather Service in Fort Worth has issued a\n\n* Tornado Warning for...\nNorth central Hill County in central Texas...\nSouthwestern Ellis County in north central Texas...\n\n* Until 115 AM CDT.\n\n* At 1251 AM CDT, a severe thunderstorm capable of producing a\ntornado was located near Itasca, or 9 miles north of Hillsboro,\nmoving east at 10 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nCarl's Corner around 115 AM CDT.\n\nOther locations impacted by this tornadic thunderstorm include\nMilford.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORFWD"],
+					"WMOidentifier": ["WFUS54 KFWD 220551"],
+					"eventMotionDescription": [
+						"2022-08-22T05:51:00-00:00...storm...283DEG...8KT...32.14,-97.1"
+					],
+					"maxHailSize": ["0.00"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KFWD.TO.W.0044.220822T0551Z-220822T0615Z/"],
+					"eventEndingTime": ["2022-08-22T06:15:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 1:15 AM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 1:15 AM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40c6e8b463c6400e56299d24991ffa1b3538dc62.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-114.49, 36.75],
+						[-114.3, 37.04],
+						[-114.06, 37.04],
+						[-114.05, 37],
+						[-114.05, 36.94],
+						[-114.06, 36.769999999999996],
+						[-114.49, 36.75]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40c6e8b463c6400e56299d24991ffa1b3538dc62.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.40c6e8b463c6400e56299d24991ffa1b3538dc62.001.1",
+				"areaDesc": "Mohave, AZ; Clark, NV; Lincoln, NV",
+				"geocode": {
+					"SAME": ["004015", "032003", "032017"],
+					"UGC": ["AZC015", "NVC003", "NVC017"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/AZC015",
+					"https://api.weather.gov/zones/county/NVC003",
+					"https://api.weather.gov/zones/county/NVC017"
+				],
+				"references": [],
+				"sent": "2022-08-21T17:26:00-07:00",
+				"effective": "2022-08-21T17:26:00-07:00",
+				"onset": "2022-08-21T17:26:00-07:00",
+				"expires": "2022-08-21T17:33:00-07:00",
+				"ends": "2022-08-21T17:15:00-07:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Las Vegas NV",
+				"headline": "Tornado Warning issued August 21 at 5:26PM PDT until August 21 at 5:15PM PDT by NWS Las Vegas NV",
+				"description": "The tornado threat has diminished and the Tornado Warning has\nexpired. However, large hail and damaging winds remain likely.\n\nRemember, a Severe Thunderstorm Warning still remains in effect for\nSoutheast Lincoln, Northeast Clark, and Northwest Mohave County\nuntil 6 PM PDT, 6 PM MST.",
+				"instruction": null,
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["SVSVEF"],
+					"WMOidentifier": ["WWUS55 KVEF 220026"],
+					"NWSheadline": [
+						"THE TORNADO WARNING FOR NORTHERN MOHAVE...SOUTHEASTERN LINCOLN AND NORTHEASTERN CLARK COUNTIES HAS EXPIRED"
+					],
+					"eventMotionDescription": [
+						"2022-08-22T00:23:00-00:00...storm...008DEG...28KT...37.11,-114.09"
+					],
+					"BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.EXP.KVEF.TO.W.0001.000000T0000Z-220822T0015Z/"],
+					"eventEndingTime": ["2022-08-22T00:15:00+00:00"],
+					"expiredReferences": [
+						"w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3ba7ffb1479a92da025a9b973d628fdce7c444b6.001.1,2022-08-21T17:08:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.87d497d1d335ba72e0833e7bf705836f7b79833b.001.1,2022-08-21T16:48:00-07:00"
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6cff81ef3e03540278b9c0d8c8321a279e8f9fc9.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-113.74, 36.7],
+						[-113.52, 36.67],
+						[-113.46, 36.31],
+						[-113.94999999999999, 36.38],
+						[-113.74, 36.7]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6cff81ef3e03540278b9c0d8c8321a279e8f9fc9.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.6cff81ef3e03540278b9c0d8c8321a279e8f9fc9.001.1",
+				"areaDesc": "Mohave, AZ",
+				"geocode": {
+					"SAME": ["004015"],
+					"UGC": ["AZC015"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/AZC015"],
+				"references": [],
+				"sent": "2022-08-21T17:22:00-07:00",
+				"effective": "2022-08-21T17:22:00-07:00",
+				"onset": "2022-08-21T17:22:00-07:00",
+				"expires": "2022-08-21T17:26:00-07:00",
+				"ends": "2022-08-21T17:15:00-07:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Las Vegas NV",
+				"headline": "Tornado Warning issued August 21 at 5:22PM MST until August 21 at 5:15PM MST by NWS Las Vegas NV",
+				"description": "The tornado warning has expired. However, large hail and damaging\nwinds remain likely.\n\nRemember, a Severe Thunderstorm Warning still remains in effect for\nNorthwest Mohave County until 6 PM PST, 6 PM MST.",
+				"instruction": null,
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["SVSVEF"],
+					"WMOidentifier": ["WWUS55 KVEF 220022"],
+					"NWSheadline": [
+						"THE TORNADO WARNING FOR NORTH CENTRAL MOHAVE COUNTY HAS EXPIRED"
+					],
+					"eventMotionDescription": [
+						"2022-08-22T00:16:00-00:00...storm...008DEG...28KT...37.11,-114.09"
+					],
+					"BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.EXP.KVEF.TO.W.0002.000000T0000Z-220822T0015Z/"],
+					"eventEndingTime": ["2022-08-22T00:15:00+00:00"],
+					"expiredReferences": [
+						"w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.05e86e2630f065bce27d21936a9f09bd52312f62.001.1,2022-08-21T17:05:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d9ffa6440284a5a108c1efb48d30eaf361b74d69.001.1,2022-08-21T16:51:00-07:00"
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9ffa6440284a5a108c1efb48d30eaf361b74d69.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-113.74, 36.7],
+						[-113.52, 36.67],
+						[-113.46, 36.31],
+						[-113.94999999999999, 36.38],
+						[-113.74, 36.7]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9ffa6440284a5a108c1efb48d30eaf361b74d69.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.d9ffa6440284a5a108c1efb48d30eaf361b74d69.001.1",
+				"areaDesc": "Mohave, AZ",
+				"geocode": {
+					"SAME": ["004015"],
+					"UGC": ["AZC015"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/AZC015"],
+				"references": [],
+				"sent": "2022-08-21T16:51:00-07:00",
+				"effective": "2022-08-21T16:51:00-07:00",
+				"onset": "2022-08-21T16:51:00-07:00",
+				"expires": "2022-08-21T17:15:00-07:00",
+				"ends": "2022-08-21T17:15:00-07:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Las Vegas NV",
+				"headline": "Tornado Warning issued August 21 at 4:51PM MST until August 21 at 5:15PM MST by NWS Las Vegas NV",
+				"description": "The National Weather Service in Las Vegas has issued a\n\n* Tornado Warning for...\nNorth central Mohave County in northwestern Arizona...\n\n* Until 515 PM MST.\n\n* At 450 PM MST, a confirmed tornado was located 23 miles southeast\nof Littlefield, moving south at 30 mph.\n\nHAZARD...Damaging tornado.\n\nSOURCE...Public confirmed tornado.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This tornadic thunderstorm will remain over mainly rural areas of\nnorth central Mohave County.",
+				"instruction": "To repeat, a tornado is on the ground. TAKE COVER NOW! Move to a\nbasement or an interior room on the lowest floor of a sturdy\nbuilding. Avoid windows. If you are outdoors, in a mobile home, or in\na vehicle, move to the closest substantial shelter and protect\nyourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORVEF"],
+					"WMOidentifier": ["WFUS55 KVEF 212351"],
+					"eventMotionDescription": [
+						"2022-08-21T23:50:00-00:00...storm...008DEG...28KT...36.61,-113.65"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["OBSERVED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KVEF.TO.W.0002.220821T2351Z-220822T0015Z/"],
+					"eventEndingTime": ["2022-08-22T00:15:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 5:15 PM MST. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 5:15 PM MST. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d497d1d335ba72e0833e7bf705836f7b79833b.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-114.49, 36.75],
+						[-114.3, 37.04],
+						[-114.06, 37.04],
+						[-114.05, 37],
+						[-114.05, 36.94],
+						[-114.06, 36.769999999999996],
+						[-114.49, 36.75]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d497d1d335ba72e0833e7bf705836f7b79833b.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.87d497d1d335ba72e0833e7bf705836f7b79833b.001.1",
+				"areaDesc": "Mohave, AZ; Clark, NV; Lincoln, NV",
+				"geocode": {
+					"SAME": ["004015", "032003", "032017"],
+					"UGC": ["AZC015", "NVC003", "NVC017"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/AZC015",
+					"https://api.weather.gov/zones/county/NVC003",
+					"https://api.weather.gov/zones/county/NVC017"
+				],
+				"references": [],
+				"sent": "2022-08-21T16:48:00-07:00",
+				"effective": "2022-08-21T16:48:00-07:00",
+				"onset": "2022-08-21T16:48:00-07:00",
+				"expires": "2022-08-21T17:15:00-07:00",
+				"ends": "2022-08-21T17:15:00-07:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Las Vegas NV",
+				"headline": "Tornado Warning issued August 21 at 4:48PM PDT until August 21 at 5:15PM PDT by NWS Las Vegas NV",
+				"description": "The National Weather Service in Las Vegas has issued a\n\n* Tornado Warning for...\nNorthern Mohave County in northwestern Arizona...\nSoutheastern Lincoln County in south central Nevada...\nNortheastern Clark County in southern Nevada...\n\n* Until 515 PM PDT/515 PM MST/.\n\n* At 447 PM PDT/447 PM MST/, a confirmed tornado was located 8 miles\nnorthwest of Mesquite, moving south at 35 mph.\n\nHAZARD...Damaging tornado and quarter size hail.\n\nSOURCE...Public confirmed tornado.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This tornadic thunderstorm will remain over mainly rural areas of\nnorthern Mohave, southeastern Lincoln and northeastern Clark\nCounties.\n\nThis includes Interstate 15 in Nevada between mile markers 104 and\n120.",
+				"instruction": "To repeat, a tornado is on the ground. TAKE COVER NOW! Move to a\nbasement or an interior room on the lowest floor of a sturdy\nbuilding. Avoid windows. If you are outdoors, in a mobile home, or in\na vehicle, move to the closest substantial shelter and protect\nyourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORVEF"],
+					"WMOidentifier": ["WFUS55 KVEF 212348"],
+					"eventMotionDescription": [
+						"2022-08-21T23:47:00-00:00...storm...008DEG...28KT...36.89,-114.23"
+					],
+					"maxHailSize": ["1.00"],
+					"tornadoDetection": ["OBSERVED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KVEF.TO.W.0001.220821T2348Z-220822T0015Z/"],
+					"eventEndingTime": ["2022-08-22T00:15:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 5:15 PM PDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 5:15 PM PDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fb286667ae96f31520d440abf39f4053505dd92.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-81.08, 41.72],
+						[-81.09, 41.79],
+						[-80.88000000000001, 41.83],
+						[-80.87, 41.72],
+						[-81.08, 41.72]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fb286667ae96f31520d440abf39f4053505dd92.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.4fb286667ae96f31520d440abf39f4053505dd92.001.1",
+				"areaDesc": "Ashtabula, OH; Lake, OH",
+				"geocode": {
+					"SAME": ["039007", "039085"],
+					"UGC": ["OHC007", "OHC085"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/OHC007",
+					"https://api.weather.gov/zones/county/OHC085"
+				],
+				"references": [],
+				"sent": "2022-08-21T18:23:00-04:00",
+				"effective": "2022-08-21T18:23:00-04:00",
+				"onset": "2022-08-21T18:23:00-04:00",
+				"expires": "2022-08-21T19:00:00-04:00",
+				"ends": "2022-08-21T19:00:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Cleveland OH",
+				"headline": "Tornado Warning issued August 21 at 6:23PM EDT until August 21 at 7:00PM EDT by NWS Cleveland OH",
+				"description": "The National Weather Service in Cleveland has issued a\n\n* Tornado Warning for...\nEast central Lake County in northeastern Ohio...\nWest central Ashtabula County in northeastern Ohio...\n\n* Until 700 PM EDT.\n\n* At 623 PM EDT, a severe thunderstorm capable of producing a tornado\nwas located near Madison, or 8 miles south of Geneva-On-The-Lake,\nmoving northeast at 25 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nGeneva around 640 PM EDT.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORCLE"],
+					"WMOidentifier": ["WFUS51 KCLE 212223"],
+					"eventMotionDescription": [
+						"2022-08-21T22:23:00-00:00...storm...245DEG...20KT...41.74,-81.01"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KCLE.TO.W.0014.220821T2223Z-220821T2300Z/"],
+					"eventEndingTime": ["2022-08-21T23:00:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 7:00 PM EDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 7:00 PM EDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e3c7eca27381484737c5a730002caf6c4a354108.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-84.23, 39.69],
+						[-84.2099999, 39.78],
+						[-84.03, 39.78],
+						[-84.02, 39.65],
+						[-84.23, 39.69]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e3c7eca27381484737c5a730002caf6c4a354108.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.e3c7eca27381484737c5a730002caf6c4a354108.001.1",
+				"areaDesc": "Greene, OH; Montgomery, OH",
+				"geocode": {
+					"SAME": ["039057", "039113"],
+					"UGC": ["OHC057", "OHC113"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/OHC057",
+					"https://api.weather.gov/zones/county/OHC113"
+				],
+				"references": [],
+				"sent": "2022-08-21T17:54:00-04:00",
+				"effective": "2022-08-21T17:54:00-04:00",
+				"onset": "2022-08-21T17:54:00-04:00",
+				"expires": "2022-08-21T18:30:00-04:00",
+				"ends": "2022-08-21T18:30:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Wilmington OH",
+				"headline": "Tornado Warning issued August 21 at 5:54PM EDT until August 21 at 6:30PM EDT by NWS Wilmington OH",
+				"description": "The National Weather Service in Wilmington has issued a\n\n* Tornado Warning for...\nWest central Greene County in west central Ohio...\nEast central Montgomery County in west central Ohio...\n\n* Until 630 PM EDT.\n\n* At 553 PM EDT, a severe thunderstorm capable of producing a tornado\nwas located over Oakwood, moving east at 20 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* Locations impacted include...\nDayton, Kettering, Beavercreek, Fairborn, Moraine, Oakwood,\nWright-Patterson Afb, Riverside, Centerville and Overlook-Page\nMano.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.\n\nTo report severe weather, go to our website at weather.gov/iln and\nsubmit your report via social media, when you can do so safely.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORILN"],
+					"WMOidentifier": ["WFUS51 KILN 212154"],
+					"eventMotionDescription": [
+						"2022-08-21T21:53:00-00:00...storm...266DEG...17KT...39.72,-84.16"
+					],
+					"maxHailSize": ["0.00"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KILN.TO.W.0026.220821T2154Z-220821T2230Z/"],
+					"eventEndingTime": ["2022-08-21T22:30:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 6:30 PM EDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 6:30 PM EDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6081e4951d30992d6b219baf2fcc9c31bade20bc.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-81.64, 29.99],
+						[-81.68, 30.009999999999998],
+						[-81.69000000000001, 30.029999999999998],
+						[-81.69000000000001, 30.069999999999997],
+						[-81.68, 30.08],
+						[-81.68, 30.119999999999997],
+						[-81.69000000000001, 30.139999999999997],
+						[-81.69000000000001, 30.169999999999998],
+						[-81.56999990000001, 30.159999999999997],
+						[-81.54, 30.109999999999996],
+						[-81.64, 29.99]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6081e4951d30992d6b219baf2fcc9c31bade20bc.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.6081e4951d30992d6b219baf2fcc9c31bade20bc.001.1",
+				"areaDesc": "Duval, FL; St. Johns, FL",
+				"geocode": {
+					"SAME": ["012031", "012109"],
+					"UGC": ["FLC031", "FLC109"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/FLC031",
+					"https://api.weather.gov/zones/county/FLC109"
+				],
+				"references": [],
+				"sent": "2022-08-21T17:39:00-04:00",
+				"effective": "2022-08-21T17:39:00-04:00",
+				"onset": "2022-08-21T17:39:00-04:00",
+				"expires": "2022-08-21T18:00:00-04:00",
+				"ends": "2022-08-21T18:00:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Jacksonville FL",
+				"headline": "Tornado Warning issued August 21 at 5:39PM EDT until August 21 at 6:00PM EDT by NWS Jacksonville FL",
+				"description": "The National Weather Service in Jacksonville has issued a\n\n* Tornado Warning for...\nNorthwestern St. Johns County in northeastern Florida...\nSouthern Duval County in northeastern Florida...\n\n* Until 600 PM EDT.\n\n* At 538 PM EDT, a severe thunderstorm capable of producing a tornado\nwas located over Fruit Cove, and is nearly stationary.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nGreen Cove Springs and Switzerland around 600 PM EDT.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORJAX"],
+					"WMOidentifier": ["WFUS52 KJAX 212139"],
+					"eventMotionDescription": [
+						"2022-08-21T21:38:00-00:00...storm...065DEG...4KT...30.11,-81.63"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KJAX.TO.W.0020.220821T2139Z-220821T2200Z/"],
+					"eventEndingTime": ["2022-08-21T22:00:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 6:00 PM EDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 6:00 PM EDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d47c75fd4a7a16a9e924a0a1f28937ce3a8c6cb1.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-85.55, 41.2299999],
+						[-85.55, 41.07],
+						[-85.73, 41.05],
+						[-85.74000000000001, 41.14],
+						[-85.55, 41.2299999]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d47c75fd4a7a16a9e924a0a1f28937ce3a8c6cb1.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.d47c75fd4a7a16a9e924a0a1f28937ce3a8c6cb1.001.1",
+				"areaDesc": "Kosciusko, IN; Whitley, IN",
+				"geocode": {
+					"SAME": ["018085", "018183"],
+					"UGC": ["INC085", "INC183"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/INC085",
+					"https://api.weather.gov/zones/county/INC183"
+				],
+				"references": [],
+				"sent": "2022-08-20T22:31:00-04:00",
+				"effective": "2022-08-20T22:31:00-04:00",
+				"onset": "2022-08-20T22:31:00-04:00",
+				"expires": "2022-08-20T22:40:00-04:00",
+				"ends": "2022-08-20T22:30:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Northern Indiana",
+				"headline": "Tornado Warning issued August 20 at 10:31PM EDT until August 20 at 10:30PM EDT by NWS Northern Indiana",
+				"description": "The tornadic thunderstorm which prompted the warning has weakened.\nTherefore, the warning has been allowed to expire.",
+				"instruction": null,
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["SVSIWX"],
+					"WMOidentifier": ["WWUS53 KIWX 210231"],
+					"NWSheadline": [
+						"THE TORNADO WARNING FOR SOUTHWESTERN WHITLEY AND SOUTHEASTERN KOSCIUSKO COUNTIES HAS EXPIRED"
+					],
+					"eventMotionDescription": [
+						"2022-08-21T02:30:00-00:00...storm...246DEG...17KT...41.15,-85.63"
+					],
+					"BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.EXP.KIWX.TO.W.0003.000000T0000Z-220821T0230Z/"],
+					"eventEndingTime": ["2022-08-21T02:30:00+00:00"],
+					"expiredReferences": [
+						"w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f61b1a572f99712abb5d4a00159a90928f61115f.001.1,2022-08-20T22:23:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8c009de67c80b29c6926cd8f1b2d93f272d7209a.001.1,2022-08-20T22:03:00-04:00"
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c009de67c80b29c6926cd8f1b2d93f272d7209a.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-85.8199999, 41.1],
+						[-85.55, 41.2299999],
+						[-85.55, 41.07],
+						[-85.81, 41.04],
+						[-85.8199999, 41.04],
+						[-85.8199999, 41.1]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c009de67c80b29c6926cd8f1b2d93f272d7209a.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.8c009de67c80b29c6926cd8f1b2d93f272d7209a.001.1",
+				"areaDesc": "Kosciusko, IN; Whitley, IN",
+				"geocode": {
+					"SAME": ["018085", "018183"],
+					"UGC": ["INC085", "INC183"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/INC085",
+					"https://api.weather.gov/zones/county/INC183"
+				],
+				"references": [],
+				"sent": "2022-08-20T22:03:00-04:00",
+				"effective": "2022-08-20T22:03:00-04:00",
+				"onset": "2022-08-20T22:03:00-04:00",
+				"expires": "2022-08-20T22:30:00-04:00",
+				"ends": "2022-08-20T22:30:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Northern Indiana",
+				"headline": "Tornado Warning issued August 20 at 10:03PM EDT until August 20 at 10:30PM EDT by NWS Northern Indiana",
+				"description": "The National Weather Service in Northern Indiana has issued a\n\n* Tornado Warning for...\nSouthwestern Whitley County in northeastern Indiana...\nSoutheastern Kosciusko County in north central Indiana...\n\n* Until 1030 PM EDT.\n\n* At 1002 PM EDT, a severe thunderstorm capable of producing a\ntornado was located near North Manchester, moving northeast at 20\nmph.\n\nHAZARD...Tornado and quarter size hail.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nSouth Whitley around 1020 PM EDT.\n\nOther locations impacted by this tornadic thunderstorm include\nLorane, Collamer, Larwill and Sidney.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.\n\nTornadoes are extremely difficult to see and confirm at night. Do not\nwait to see or hear the tornado. TAKE COVER NOW!\n\nTorrential rainfall is occurring with this storm, and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORIWX"],
+					"WMOidentifier": ["WFUS53 KIWX 210203"],
+					"eventMotionDescription": [
+						"2022-08-21T02:02:00-00:00...storm...246DEG...17KT...41.09,-85.76"
+					],
+					"maxHailSize": ["1.00"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KIWX.TO.W.0003.220821T0203Z-220821T0230Z/"],
+					"eventEndingTime": ["2022-08-21T02:30:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 10:30 PM EDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 10:30 PM EDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1cdf2632ca26f56c3dffc2190095fc6aa94ebe83.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-81.88, 40.45],
+						[-81.94, 40.52],
+						[-81.7, 40.67],
+						[-81.65, 40.67],
+						[-81.65, 40.64],
+						[-81.67, 40.63],
+						[-81.66, 40.620000000000005],
+						[-81.67, 40.440000000000005],
+						[-81.88, 40.45]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1cdf2632ca26f56c3dffc2190095fc6aa94ebe83.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.1cdf2632ca26f56c3dffc2190095fc6aa94ebe83.001.1",
+				"areaDesc": "Holmes, OH",
+				"geocode": {
+					"SAME": ["039075"],
+					"UGC": ["OHC075"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/OHC075"],
+				"references": [],
+				"sent": "2022-08-20T20:28:00-04:00",
+				"effective": "2022-08-20T20:28:00-04:00",
+				"onset": "2022-08-20T20:28:00-04:00",
+				"expires": "2022-08-20T21:15:00-04:00",
+				"ends": "2022-08-20T21:15:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Cleveland OH",
+				"headline": "Tornado Warning issued August 20 at 8:28PM EDT until August 20 at 9:15PM EDT by NWS Cleveland OH",
+				"description": "The National Weather Service in Cleveland has issued a\n\n* Tornado Warning for...\nEastern Holmes County in northeastern Ohio...\n\n* Until 915 PM EDT.\n\n* At 827 PM EDT, a severe thunderstorm capable of producing a tornado\nwas located near Berlin, or near Millersburg, moving northeast at\n15 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nFarmerstown around 840 PM EDT.\nWalnut Creek around 845 PM EDT.\nSugarcreek around 855 PM EDT.\nWinesburg around 900 PM EDT.\n\nOther locations impacted by this tornadic thunderstorm include Baltic\nand Charm.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORCLE"],
+					"WMOidentifier": ["WFUS51 KCLE 210028"],
+					"eventMotionDescription": [
+						"2022-08-21T00:27:00-00:00...storm...243DEG...15KT...40.5,-81.82"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KCLE.TO.W.0013.220821T0028Z-220821T0115Z/"],
+					"eventEndingTime": ["2022-08-21T01:15:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 9:15 PM EDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 9:15 PM EDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.94c395e00cff38fe236df6ac0118adb367a87dac.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-88.93, 40.75],
+						[-88.72000000000001, 40.75],
+						[-88.68, 40.67],
+						[-88.97000000000001, 40.68],
+						[-89.00000000000001, 40.75],
+						[-88.93000000000002, 40.78],
+						[-88.93, 40.75]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.94c395e00cff38fe236df6ac0118adb367a87dac.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.94c395e00cff38fe236df6ac0118adb367a87dac.001.1",
+				"areaDesc": "McLean, IL; Woodford, IL",
+				"geocode": {
+					"SAME": ["017113", "017203"],
+					"UGC": ["ILC113", "ILC203"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/ILC113",
+					"https://api.weather.gov/zones/county/ILC203"
+				],
+				"references": [],
+				"sent": "2022-08-20T16:41:00-05:00",
+				"effective": "2022-08-20T16:41:00-05:00",
+				"onset": "2022-08-20T16:41:00-05:00",
+				"expires": "2022-08-20T17:15:00-05:00",
+				"ends": "2022-08-20T17:15:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Lincoln IL",
+				"headline": "Tornado Warning issued August 20 at 4:41PM CDT until August 20 at 5:15PM CDT by NWS Lincoln IL",
+				"description": "The National Weather Service in Lincoln has issued a\n\n* Tornado Warning for...\nEast central Woodford County in central Illinois...\nNorth central McLean County in central Illinois...\n\n* Until 515 PM CDT.\n\n* At 437 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Gridley, or 16 miles southwest of Pontiac, moving\neast at 20 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nChenoa around 505 PM CDT.\n\nThis includes Interstate 55 between mile markers 182 and 186.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORILX"],
+					"WMOidentifier": ["WFUS53 KILX 202141"],
+					"eventMotionDescription": [
+						"2022-08-20T21:37:00-00:00...storm...256DEG...18KT...40.73,-88.89"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KILX.TO.W.0007.220820T2141Z-220820T2215Z/"],
+					"eventEndingTime": ["2022-08-20T22:15:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 5:15 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 5:15 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b07c141ff679d6c859b0c7ba83481aa606d32564.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-90.79, 41.96],
+						[-90.93, 41.97],
+						[-90.93, 42.01],
+						[-90.87, 42.03],
+						[-90.80000000000001, 42.03],
+						[-90.79, 41.96]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b07c141ff679d6c859b0c7ba83481aa606d32564.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.b07c141ff679d6c859b0c7ba83481aa606d32564.001.1",
+				"areaDesc": "Clinton, IA; Jones, IA",
+				"geocode": {
+					"SAME": ["019045", "019105"],
+					"UGC": ["IAC045", "IAC105"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/IAC045",
+					"https://api.weather.gov/zones/county/IAC105"
+				],
+				"references": [],
+				"sent": "2022-08-20T15:34:00-05:00",
+				"effective": "2022-08-20T15:34:00-05:00",
+				"onset": "2022-08-20T15:34:00-05:00",
+				"expires": "2022-08-20T15:44:00-05:00",
+				"ends": "2022-08-20T15:30:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Quad Cities IA IL",
+				"headline": "Tornado Warning issued August 20 at 3:34PM CDT until August 20 at 3:30PM CDT by NWS Quad Cities IA IL",
+				"description": "The storm which prompted the warning has weakened below severe\nlimits, and no longer appears capable of producing a tornado.\nTherefore, the warning has been allowed to expire.\n\nTo report severe weather, contact your nearest law enforcement\nagency. They will relay your report to the National Weather Service\nthe Quad Cities.",
+				"instruction": null,
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["SVSDVN"],
+					"WMOidentifier": ["WWUS53 KDVN 202034"],
+					"NWSheadline": [
+						"THE TORNADO WARNING FOR SOUTHEASTERN JONES AND NORTHWESTERN CLINTON COUNTIES HAS EXPIRED"
+					],
+					"eventMotionDescription": [
+						"2022-08-20T20:34:00-00:00...storm...271DEG...11KT...41.99,-90.83"
+					],
+					"BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.EXP.KDVN.TO.W.0025.000000T0000Z-220820T2030Z/"],
+					"eventEndingTime": ["2022-08-20T20:30:00+00:00"],
+					"expiredReferences": [
+						"w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.690828ee99f8735113e20d360e8a121e8b42ebe7.001.1,2022-08-20T15:18:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.827468e744dc5051b168ef6ca8c752a11e2f3ff2.001.1,2022-08-20T15:07:00-05:00"
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.827468e744dc5051b168ef6ca8c752a11e2f3ff2.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-90.79, 41.96],
+						[-90.94000000000001, 41.96],
+						[-90.95000000000002, 42.01],
+						[-90.87000000000002, 42.03],
+						[-90.80000000000003, 42.03],
+						[-90.79, 41.96]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.827468e744dc5051b168ef6ca8c752a11e2f3ff2.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.827468e744dc5051b168ef6ca8c752a11e2f3ff2.001.1",
+				"areaDesc": "Clinton, IA; Jones, IA",
+				"geocode": {
+					"SAME": ["019045", "019105"],
+					"UGC": ["IAC045", "IAC105"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/IAC045",
+					"https://api.weather.gov/zones/county/IAC105"
+				],
+				"references": [],
+				"sent": "2022-08-20T15:07:00-05:00",
+				"effective": "2022-08-20T15:07:00-05:00",
+				"onset": "2022-08-20T15:07:00-05:00",
+				"expires": "2022-08-20T15:30:00-05:00",
+				"ends": "2022-08-20T15:30:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Quad Cities IA IL",
+				"headline": "Tornado Warning issued August 20 at 3:07PM CDT until August 20 at 3:30PM CDT by NWS Quad Cities IA IL",
+				"description": "The National Weather Service in the Quad Cities has issued a\n\n* Tornado Warning for...\nSoutheastern Jones County in east central Iowa...\nNorthwestern Clinton County in east central Iowa...\n\n* Until 330 PM CDT.\n\n* At 307 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Oxford Junction, or 13 miles southwest of\nMaquoketa, moving east at 10 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* Locations impacted include...\nLost Nation.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORDVN"],
+					"WMOidentifier": ["WFUS53 KDVN 202007"],
+					"eventMotionDescription": [
+						"2022-08-20T20:07:00-00:00...storm...271DEG...11KT...41.99,-90.91"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KDVN.TO.W.0025.220820T2007Z-220820T2030Z/"],
+					"eventEndingTime": ["2022-08-20T20:30:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 3:30 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 3:30 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6dcbcdeb799fdeb4a97ac5439a763a0e259297af.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-85.04, 40.18],
+						[-85.16000000000001, 40.24],
+						[-85.10000000000001, 40.31],
+						[-84.80000000000001, 40.31],
+						[-85.04, 40.18]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6dcbcdeb799fdeb4a97ac5439a763a0e259297af.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.6dcbcdeb799fdeb4a97ac5439a763a0e259297af.001.1",
+				"areaDesc": "Randolph, IN",
+				"geocode": {
+					"SAME": ["018135"],
+					"UGC": ["INC135"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/INC135"],
+				"references": [],
+				"sent": "2022-08-20T15:45:00-04:00",
+				"effective": "2022-08-20T15:45:00-04:00",
+				"onset": "2022-08-20T15:45:00-04:00",
+				"expires": "2022-08-20T15:55:00-04:00",
+				"ends": "2022-08-20T15:45:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Indianapolis IN",
+				"headline": "Tornado Warning issued August 20 at 3:45PM EDT until August 20 at 3:45PM EDT by NWS Indianapolis IN",
+				"description": "The storm which prompted the warning has weakened below severe\nlimits, and has exited the warned area. Therefore, the warning has\nbeen allowed to expire.\n\nTo report severe weather, contact your nearest law enforcement\nagency. They will relay your report to the National Weather Service\nIndianapolis.",
+				"instruction": null,
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["SVSIND"],
+					"WMOidentifier": ["WWUS53 KIND 201945"],
+					"NWSheadline": [
+						"THE TORNADO WARNING FOR NORTHERN RANDOLPH COUNTY HAS EXPIRED"
+					],
+					"eventMotionDescription": [
+						"2022-08-20T19:45:00-00:00...storm...221DEG...19KT...40.32,-84.96"
+					],
+					"BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.EXP.KIND.TO.W.0020.000000T0000Z-220820T1945Z/"],
+					"eventEndingTime": ["2022-08-20T19:45:00+00:00"],
+					"expiredReferences": [
+						"w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f0db4cc826923d569d3b9b9654e2046d6306bfdb.001.1,2022-08-20T15:33:00-04:00"
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5c91ba1bd598a99765e8d1553d5abcfd5e48bc.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-89.47, 40.63],
+						[-89.47, 40.75],
+						[-89.2, 40.77],
+						[-89.2099999, 40.580000000000005],
+						[-89.47, 40.63]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5c91ba1bd598a99765e8d1553d5abcfd5e48bc.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.bd5c91ba1bd598a99765e8d1553d5abcfd5e48bc.001.1",
+				"areaDesc": "McLean, IL; Tazewell, IL; Woodford, IL",
+				"geocode": {
+					"SAME": ["017113", "017179", "017203"],
+					"UGC": ["ILC113", "ILC179", "ILC203"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/ILC113",
+					"https://api.weather.gov/zones/county/ILC179",
+					"https://api.weather.gov/zones/county/ILC203"
+				],
+				"references": [],
+				"sent": "2022-08-20T14:44:00-05:00",
+				"effective": "2022-08-20T14:44:00-05:00",
+				"onset": "2022-08-20T14:44:00-05:00",
+				"expires": "2022-08-20T15:15:00-05:00",
+				"ends": "2022-08-20T15:15:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Lincoln IL",
+				"headline": "Tornado Warning issued August 20 at 2:44PM CDT until August 20 at 3:15PM CDT by NWS Lincoln IL",
+				"description": "The National Weather Service in Lincoln has issued a\n\n* Tornado Warning for...\nSouthwestern Woodford County in central Illinois...\nNortheastern Tazewell County in central Illinois...\nNorthwestern McLean County in central Illinois...\n\n* Until 315 PM CDT.\n\n* At 243 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Washington, or 7 miles west of Eureka, moving east\nat 25 mph.\n\nHAZARD...Tornado and quarter size hail.\n\nSOURCE...Weather spotters reported funnel cloud.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nDeer Creek around 255 PM CDT.\nEureka around 300 PM CDT.\nGoodfield around 305 PM CDT.\n\nOther locations impacted by this tornadic thunderstorm include\nCongerville.\n\nThis includes Interstate 74 between mile markers 104 and 115.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.\n\nTo report severe weather contact your nearest law enforcement agency.\nThey will send your report to the National Weather Service office in\nLincoln.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORILX"],
+					"WMOidentifier": ["WFUS53 KILX 201944"],
+					"eventMotionDescription": [
+						"2022-08-20T19:43:00-00:00...storm...274DEG...20KT...40.68,-89.41"
+					],
+					"maxHailSize": ["1.00"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KILX.TO.W.0006.220820T1944Z-220820T2015Z/"],
+					"eventEndingTime": ["2022-08-20T20:15:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 3:15 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 3:15 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f0db4cc826923d569d3b9b9654e2046d6306bfdb.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-85.04, 40.18],
+						[-85.16000000000001, 40.24],
+						[-85.10000000000001, 40.31],
+						[-84.80000000000001, 40.31],
+						[-85.04, 40.18]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f0db4cc826923d569d3b9b9654e2046d6306bfdb.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.f0db4cc826923d569d3b9b9654e2046d6306bfdb.001.1",
+				"areaDesc": "Randolph, IN",
+				"geocode": {
+					"SAME": ["018135"],
+					"UGC": ["INC135"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/INC135"],
+				"references": [],
+				"sent": "2022-08-20T15:33:00-04:00",
+				"effective": "2022-08-20T15:33:00-04:00",
+				"onset": "2022-08-20T15:33:00-04:00",
+				"expires": "2022-08-20T15:45:00-04:00",
+				"ends": "2022-08-20T15:45:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Indianapolis IN",
+				"headline": "Tornado Warning issued August 20 at 3:33PM EDT until August 20 at 3:45PM EDT by NWS Indianapolis IN",
+				"description": "The National Weather Service in Indianapolis has issued a\n\n* Tornado Warning for...\nNorthern Randolph County in east central Indiana...\n\n* Until 345 PM EDT.\n\n* At 333 PM EDT, a confirmed tornado was located 7 miles north of\nWinchester, or 10 miles south of Portland, moving northeast at 20\nmph.\n\nHAZARD...Tornado.\n\nSOURCE...Weather spotters confirmed tornado.\n\nIMPACT...Expect damage to mobile homes, roofs, and vehicles.\n\n* This tornadic thunderstorm will remain over mainly rural areas of\nnorthern Randolph County.",
+				"instruction": "To repeat, a tornado is on the ground. TAKE COVER NOW! Move to a\nbasement or an interior room on the lowest floor of a sturdy\nbuilding. Avoid windows. If you are outdoors, in a mobile home, or in\na vehicle, move to the closest substantial shelter and protect\nyourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORIND"],
+					"WMOidentifier": ["WFUS53 KIND 201933"],
+					"eventMotionDescription": [
+						"2022-08-20T19:33:00-00:00...storm...221DEG...19KT...40.29,-85.0"
+					],
+					"maxHailSize": ["0.00"],
+					"tornadoDetection": ["OBSERVED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KIND.TO.W.0020.220820T1933Z-220820T1945Z/"],
+					"eventEndingTime": ["2022-08-20T19:45:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 3:45 PM EDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 3:45 PM EDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7b96bad2a3917095081fd6db402f3d95d3ca7dd0.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-90.79, 41.2299999],
+						[-90.59, 41.330000000000005],
+						[-90.54, 41.260000000000005],
+						[-90.49000000000001, 41.120000000000005],
+						[-90.77000000000001, 41.120000000000005],
+						[-90.79, 41.2299999]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7b96bad2a3917095081fd6db402f3d95d3ca7dd0.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.7b96bad2a3917095081fd6db402f3d95d3ca7dd0.001.1",
+				"areaDesc": "Mercer, IL",
+				"geocode": {
+					"SAME": ["017131"],
+					"UGC": ["ILC131"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/ILC131"],
+				"references": [],
+				"sent": "2022-08-20T13:56:00-05:00",
+				"effective": "2022-08-20T13:56:00-05:00",
+				"onset": "2022-08-20T13:56:00-05:00",
+				"expires": "2022-08-20T14:45:00-05:00",
+				"ends": "2022-08-20T14:45:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Quad Cities IA IL",
+				"headline": "Tornado Warning issued August 20 at 1:56PM CDT until August 20 at 2:45PM CDT by NWS Quad Cities IA IL",
+				"description": "The National Weather Service in the Quad Cities has issued a\n\n* Tornado Warning for...\nEastern Mercer County in northwestern Illinois...\n\n* Until 245 PM CDT.\n\n* At 155 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Aledo, moving east at 15 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nBurgess around 210 PM CDT.\n\nOther locations in the path of this tornadic thunderstorm include\nShale City, Old Gilchrist, Wanlock, Gilchrist, Viola, Matherville,\nBoden and Preemption.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORDVN"],
+					"WMOidentifier": ["WFUS53 KDVN 201856"],
+					"eventMotionDescription": [
+						"2022-08-20T18:55:00-00:00...storm...252DEG...12KT...41.21,-90.73"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KDVN.TO.W.0024.220820T1856Z-220820T1945Z/"],
+					"eventEndingTime": ["2022-08-20T19:45:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 2:45 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 2:45 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c1f760135ed5328e420f82c8e673e9b6f06dba3.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-90.93, 41.14],
+						[-90.93, 41.22],
+						[-90.70999990000001, 41.25],
+						[-90.67000000000002, 41.19],
+						[-90.73000000000002, 41.12],
+						[-90.93, 41.14]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c1f760135ed5328e420f82c8e673e9b6f06dba3.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.8c1f760135ed5328e420f82c8e673e9b6f06dba3.001.1",
+				"areaDesc": "Mercer, IL",
+				"geocode": {
+					"SAME": ["017131"],
+					"UGC": ["ILC131"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/ILC131"],
+				"references": [],
+				"sent": "2022-08-20T13:35:00-05:00",
+				"effective": "2022-08-20T13:35:00-05:00",
+				"onset": "2022-08-20T13:35:00-05:00",
+				"expires": "2022-08-20T14:15:00-05:00",
+				"ends": "2022-08-20T14:15:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Quad Cities IA IL",
+				"headline": "Tornado Warning issued August 20 at 1:35PM CDT until August 20 at 2:15PM CDT by NWS Quad Cities IA IL",
+				"description": "The National Weather Service in the Quad Cities has issued a\n\n* Tornado Warning for...\nCentral Mercer County in northwestern Illinois...\n\n* Until 215 PM CDT.\n\n* At 134 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Joy, or near Aledo, moving east at 10 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nMillersburg around 150 PM CDT.\n\nOther locations in the path of this tornadic thunderstorm include\nMercer County Fairgrounds, Aledo and Sunbeam.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORDVN"],
+					"WMOidentifier": ["WFUS53 KDVN 201835"],
+					"eventMotionDescription": [
+						"2022-08-20T18:34:00-00:00...storm...269DEG...11KT...41.19,-90.87"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KDVN.TO.W.0023.220820T1835Z-220820T1915Z/"],
+					"eventEndingTime": ["2022-08-20T19:15:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 2:15 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 2:15 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.84802d7d2a65702601d50fcee74d49cf00bbebe1.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-90.68, 41.86],
+						[-90.63000000000001, 41.74],
+						[-90.9, 41.71],
+						[-90.9, 41.79],
+						[-90.68, 41.86]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.84802d7d2a65702601d50fcee74d49cf00bbebe1.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.84802d7d2a65702601d50fcee74d49cf00bbebe1.001.1",
+				"areaDesc": "Clinton, IA; Scott, IA",
+				"geocode": {
+					"SAME": ["019045", "019163"],
+					"UGC": ["IAC045", "IAC163"]
+				},
+				"affectedZones": [
+					"https://api.weather.gov/zones/county/IAC045",
+					"https://api.weather.gov/zones/county/IAC163"
+				],
+				"references": [],
+				"sent": "2022-08-20T12:24:00-05:00",
+				"effective": "2022-08-20T12:24:00-05:00",
+				"onset": "2022-08-20T12:24:00-05:00",
+				"expires": "2022-08-20T12:45:00-05:00",
+				"ends": "2022-08-20T12:45:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Quad Cities IA IL",
+				"headline": "Tornado Warning issued August 20 at 12:24PM CDT until August 20 at 12:45PM CDT by NWS Quad Cities IA IL",
+				"description": "The National Weather Service in the Quad Cities has issued a\n\n* Tornado Warning for...\nNorthwestern Scott County in east central Iowa...\nSouthwestern Clinton County in east central Iowa...\n\n* Until 1245 PM CDT.\n\n* At 1221 PM CDT, a severe thunderstorm capable of producing a\ntornado was located over New Liberty, or 10 miles north of Durant,\nmoving east at 15 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nBig Rock and Camp Liberty around 1235 PM CDT.\nDixon around 1240 PM CDT.\n\nOther locations in the path of this tornadic thunderstorm include\nGrand Mound, Calamus and Sherman Park.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORDVN"],
+					"WMOidentifier": ["WFUS53 KDVN 201724"],
+					"eventMotionDescription": [
+						"2022-08-20T17:21:00-00:00...storm...249DEG...12KT...41.74,-90.87"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KDVN.TO.W.0022.220820T1724Z-220820T1745Z/"],
+					"eventEndingTime": ["2022-08-20T17:45:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 12:45 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 12:45 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2438a42ed5093a8e85a21b2cd15271e627dde53.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-91.16, 42.09],
+						[-91.22999999999999, 42.13],
+						[-91.07999999999998, 42.29],
+						[-90.91999999999999, 42.19],
+						[-91.16, 42.09]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2438a42ed5093a8e85a21b2cd15271e627dde53.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.f2438a42ed5093a8e85a21b2cd15271e627dde53.001.1",
+				"areaDesc": "Jones, IA",
+				"geocode": {
+					"SAME": ["019105"],
+					"UGC": ["IAC105"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/IAC105"],
+				"references": [],
+				"sent": "2022-08-20T12:07:00-05:00",
+				"effective": "2022-08-20T12:07:00-05:00",
+				"onset": "2022-08-20T12:07:00-05:00",
+				"expires": "2022-08-20T12:45:00-05:00",
+				"ends": "2022-08-20T12:45:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Quad Cities IA IL",
+				"headline": "Tornado Warning issued August 20 at 12:07PM CDT until August 20 at 12:45PM CDT by NWS Quad Cities IA IL",
+				"description": "The National Weather Service in the Quad Cities has issued a\n\n* Tornado Warning for...\nNortheastern Jones County in east central Iowa...\n\n* Until 1245 PM CDT.\n\n* At 1207 PM CDT, a severe thunderstorm capable of producing a\ntornado was located over Scotch Grove, or 9 miles northeast of\nAnamosa, moving northeast at 10 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nCamp Courageous and Pictured Rocks Wildlife Area around 1220 PM\nCDT.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORDVN"],
+					"WMOidentifier": ["WFUS53 KDVN 201707"],
+					"eventMotionDescription": [
+						"2022-08-20T17:07:00-00:00...storm...226DEG...8KT...42.17,-91.11"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KDVN.TO.W.0021.220820T1707Z-220820T1745Z/"],
+					"eventEndingTime": ["2022-08-20T17:45:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 12:45 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 12:45 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9a4fac79cef50987d4a6ddbf27c1f9ada7fbf65.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-79.08, 33.65],
+						[-78.99, 33.769999999999996],
+						[-78.86999999999999, 33.699999999999996],
+						[-78.99, 33.58],
+						[-79.08, 33.65]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9a4fac79cef50987d4a6ddbf27c1f9ada7fbf65.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.c9a4fac79cef50987d4a6ddbf27c1f9ada7fbf65.001.1",
+				"areaDesc": "Horry, SC",
+				"geocode": {
+					"SAME": ["045051"],
+					"UGC": ["SCC051"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/SCC051"],
+				"references": [],
+				"sent": "2022-08-19T08:34:00-04:00",
+				"effective": "2022-08-19T08:34:00-04:00",
+				"onset": "2022-08-19T08:34:00-04:00",
+				"expires": "2022-08-19T09:00:00-04:00",
+				"ends": "2022-08-19T09:00:00-04:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Wilmington NC",
+				"headline": "Tornado Warning issued August 19 at 8:34AM EDT until August 19 at 9:00AM EDT by NWS Wilmington NC",
+				"description": "The National Weather Service in Wilmington has issued a\n\n* Tornado Warning for...\nSouth central Horry County in northeastern South Carolina...\n\n* Until 900 AM EDT.\n\n* At 834 AM EDT, a severe thunderstorm capable of producing a tornado\nwas located over Socastee, moving northeast at 10 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* This dangerous storm will be near...\nSpringmaid Pier and Socastee around 855 AM EDT.\nMyrtle Beach, Myrtle Beach Airport, Red Hill and Forestbrook\naround 900 AM EDT.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORILM"],
+					"WMOidentifier": ["WFUS52 KILM 191234"],
+					"eventMotionDescription": [
+						"2022-08-19T12:34:00-00:00...storm...217DEG...8KT...33.65,-79.0"
+					],
+					"maxHailSize": ["Up to .75"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KILM.TO.W.0009.220819T1234Z-220819T1300Z/"],
+					"eventEndingTime": ["2022-08-19T13:00:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 9:00 AM EDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 9:00 AM EDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		},
+		{
+			"id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e8a6b8dafb43eeb3af54ce01496a6507251d4547.001.1",
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-98.3199999, 47.53],
+						[-98.25, 47.58],
+						[-98.14, 47.55],
+						[-98.0699999, 47.44],
+						[-98.3199999, 47.4],
+						[-98.3199999, 47.53]
+					]
+				]
+			},
+			"properties": {
+				"@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e8a6b8dafb43eeb3af54ce01496a6507251d4547.001.1",
+				"@type": "wx:Alert",
+				"id": "urn:oid:2.49.0.1.840.0.e8a6b8dafb43eeb3af54ce01496a6507251d4547.001.1",
+				"areaDesc": "Griggs, ND",
+				"geocode": {
+					"SAME": ["038039"],
+					"UGC": ["NDC039"]
+				},
+				"affectedZones": ["https://api.weather.gov/zones/county/NDC039"],
+				"references": [],
+				"sent": "2022-08-16T17:55:00-05:00",
+				"effective": "2022-08-16T17:55:00-05:00",
+				"onset": "2022-08-16T17:55:00-05:00",
+				"expires": "2022-08-16T18:45:00-05:00",
+				"ends": "2022-08-16T18:45:00-05:00",
+				"status": "Actual",
+				"messageType": "Alert",
+				"category": "Met",
+				"severity": "Extreme",
+				"certainty": "Observed",
+				"urgency": "Immediate",
+				"event": "Tornado Warning",
+				"sender": "w-nws.webmaster@noaa.gov",
+				"senderName": "NWS Grand Forks ND",
+				"headline": "Tornado Warning issued August 16 at 5:55PM CDT until August 16 at 6:45PM CDT by NWS Grand Forks ND",
+				"description": "The National Weather Service in Grand Forks has issued a\n\n* Tornado Warning for...\nCentral Griggs County in southeastern North Dakota...\n\n* Until 645 PM CDT.\n\n* At 555 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Jessie, or 43 miles north of Valley City, moving\nsouth at 5 mph.\n\nHAZARD...Tornado and quarter size hail.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* Locations impacted include...\nCooperstown.",
+				"instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+				"response": "Shelter",
+				"parameters": {
+					"AWIPSidentifier": ["TORFGF"],
+					"WMOidentifier": ["WFUS53 KFGF 162255"],
+					"eventMotionDescription": [
+						"2022-08-16T22:55:00-00:00...storm...351DEG...5KT...47.53,-98.24"
+					],
+					"maxHailSize": ["1.00"],
+					"tornadoDetection": ["RADAR INDICATED"],
+					"BLOCKCHANNEL": ["EAS", "NWEM"],
+					"EAS-ORG": ["WXR"],
+					"VTEC": ["/O.NEW.KFGF.TO.W.0034.220816T2255Z-220816T2345Z/"],
+					"eventEndingTime": ["2022-08-16T23:45:00+00:00"],
+					"WEAHandling": ["Imminent Threat"],
+					"CMAMtext": [
+						"NWS: TORNADO WARNING in this area til 6:45 PM CDT. Take shelter now. Check media."
+					],
+					"CMAMlongtext": [
+						"National Weather Service: TORNADO WARNING in this area until 6:45 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+					]
+				}
+			}
+		}
+	],
+	"title": "Tornado Warning events issued between Tue, Aug 16, 2022 12:00:00 AM +0000 and Tue, Aug 30, 2022 12:00:00 AM +0000",
+	"updated": "2022-08-23T00:16:40+00:00",
+	"pagination": {
+		"next": "https://api.weather.gov/alerts?start=2022-08-16T00:00:00Z&end=2022-08-30T00:00:00Z&message_type%5B0%5D=alert&event%5B0%5D=Tornado%20Warning&cursor=eyJ0IjoxNjYwNjkwNTAwLCJpIjoidXJuOm9pZDoyLjQ5LjAuMS44NDAuMC5lOGE2YjhkYWZiNDNlZWIzYWY1NGNlMDE0OTZhNjUwNzI1MWQ0NTQ3LjAwMS4xIn0%3D"
+	}
+}
