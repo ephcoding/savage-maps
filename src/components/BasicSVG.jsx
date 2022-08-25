@@ -1,4 +1,4 @@
-export const Shape = () => {
+export const BasicSVG = () => {
 	return (
 		<svg
 			className='border-2 border-white'

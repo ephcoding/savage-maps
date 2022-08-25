@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
-// import { BasicSVG } from "../components";
+import { BasicSVG } from "../components";
 
 import {
 	LouisianaMap,
@@ -18,7 +18,7 @@ export default function Home() {
 				<h1>KARTELAND</h1>
 			</div>
 			<div className='grid gap-10 md:grid-cols-2'>
-				{/* <BasicSVG /> */}
+				<BasicSVG />
 				<LouisianaMap />
 				<USOULinearGradientMap />
 				<USOURotatedGradientMap />
