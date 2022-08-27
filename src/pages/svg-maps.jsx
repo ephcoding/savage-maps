@@ -1,12 +1,28 @@
 import { Layout } from "../components";
 import {
-	GeoJsonMapFromTopoJson,
+	GeoJsonSVGMapFromTopoJson,
 	USOULinearGradientMap,
 } from "../features/maps";
+import * as d3 from "d3";
+// -- MAP DATA
+import { TOPO_JSON } from "../source_files";
+const testMapUrl = "https://unpkg.com/world-atlas@2.0.2/countries-50m.json";
+const fipsUsaMapUrl =
+	"https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
+const fipsAlbersMapUrl =
+	"https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json";
+
+// const equalEarthProjection = d3.geoEqualEarth();
+const albersProjection = d3.geoAlbers();
+
 const SvgMapsPage = () => {
 	return (
 		<Layout pageName='Maps'>
-			<GeoJsonMapFromTopoJson />
+			<GeoJsonSVGMapFromTopoJson
+				topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
+				geometryToUse='states'
+				projection={albersProjection}
+			/>
 			{/* <USOULinearGradientMap /> */}
 		</Layout>
 	);
