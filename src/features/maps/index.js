@@ -1,6 +1,6 @@
 export * from "./ArcGISMap";
-export * from "./FipsConusMap";
 export * from "./GeoAlbersWarningPolygon";
+export * from "./GeoJsonMapFromTopoJson";
 export * from "./LouisianaMap";
 export * from "./OBBLinearGradientMap";
 export * from "./OBBVerticalLinearGradientMap";
