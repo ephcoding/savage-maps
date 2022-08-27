@@ -18,22 +18,24 @@ const albersProjection = d3.geoAlbers();
 const SvgMapsPage = () => {
 	return (
 		<Layout pageName='Maps'>
-			<GeoJsonSVGMapFromTopoJson
-				topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
-				geometryToUse='counties'
-				projection={albersProjection}
-			/>
-			<GeoJsonSVGMapFromTopoJson
-				topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
-				geometryToUse='states'
-				projection={albersProjection}
-			/>
-			<GeoJsonSVGMapFromTopoJson
-				topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
-				geometryToUse='nation'
-				projection={albersProjection}
-			/>
-			{/* <USOULinearGradientMap /> */}
+			<div className='grid gap-16 grid-cols-2 grid-flow-row'>
+				<GeoJsonSVGMapFromTopoJson
+					topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
+					geometryToUse='counties'
+					projection={albersProjection}
+				/>
+				<GeoJsonSVGMapFromTopoJson
+					topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
+					geometryToUse='states'
+					projection={albersProjection}
+				/>
+				<GeoJsonSVGMapFromTopoJson
+					topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
+					geometryToUse='nation'
+					projection={albersProjection}
+				/>
+				{/* <USOULinearGradientMap /> */}
+			</div>
 		</Layout>
 	);
 };

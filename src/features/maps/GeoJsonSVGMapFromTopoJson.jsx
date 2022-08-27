@@ -24,7 +24,13 @@ export const GeoJsonSVGMapFromTopoJson = ({
 	}, [geoJson]);
 
 	return (
-		<svg id='geoJsonMap' width='975' height='610' viewBox='0 0 975 610'>
+		<svg
+			id='geoJsonMap'
+			// width='975'
+			// height='610'
+			viewBox='0 0 975 610'
+			className='border-2 border-white'
+		>
 			{geoJsonGeometry && (
 				<GeoProjectionPath geometry={geoJsonGeometry} projection={projection} />
 			)}
@@ -38,7 +44,13 @@ const GeoProjectionPath = ({ geometry, projection }) => {
 	return (
 		<g>
 			{geometry.features.map((feature) => {
-				return <path key={feature.id} d={setSvgPath(feature)} />;
+				return (
+					<path
+						key={feature.id}
+						d={setSvgPath(feature)}
+						className='stroke-red-500'
+					/>
+				);
 			})}
 		</g>
 	);
