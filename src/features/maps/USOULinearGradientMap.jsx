@@ -1,4 +1,4 @@
-import { svgToJsonUsa } from "../../source_files";
+import { JSON } from "../../source_files";
 import { VectorMap } from "@south-paw/react-vector-maps";
 
 export const USOULinearGradientMap = () => {
@@ -6,7 +6,7 @@ export const USOULinearGradientMap = () => {
 		<div>
 			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
 				<VectorMap
-					{...svgToJsonUsa}
+					{...JSON.svgToJsonUsa}
 					className='stroke-blue-400 fill-[url(#gradient1)]'
 				>
 					<defs>

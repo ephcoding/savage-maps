@@ -1,19 +1,10 @@
 import { Layout } from "../components";
-import {
-	LouisianaMap,
-	OBBLinearGradientMap,
-	OBBVerticalLinearGradientMap,
-	USOULinearGradientMap,
-	USOURotatedGradientMap,
-} from "../features/maps";
+import { FipsConusMap, USOULinearGradientMap } from "../features/maps";
 const SvgMapsPage = () => {
 	return (
 		<Layout pageName='Maps'>
-			{/* <LouisianaMap /> */}
-			<USOULinearGradientMap />
-			{/* <USOURotatedGradientMap />
-			<OBBLinearGradientMap />
-			<OBBVerticalLinearGradientMap /> */}
+			<FipsConusMap />
+			{/* <USOULinearGradientMap /> */}
 		</Layout>
 	);
 };

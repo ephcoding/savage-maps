@@ -10,7 +10,7 @@ export default function Home() {
 				{NAV_ITEMS.map(({ name, href, description, icon }) => {
 					const ReactIcon = icon;
 					return (
-						<Card className='shadow-xl shadow-black'>
+						<Card key={name} className='shadow-xl shadow-black'>
 							<div className='flex justify-center py-6 bg-blue-600'>
 								<ReactIcon size={90} />
 							</div>
