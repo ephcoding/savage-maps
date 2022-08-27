@@ -20,7 +20,6 @@ export const GeoJsonSVGMapFromTopoJson = ({
 		if (geoJson) {
 			setGeoJsonGeometry(geoJson);
 		}
-		geoJsonGeometry && console.log(">> GEOJSON MAP:\n", geoJsonGeometry);
 	}, [geoJson]);
 
 	return (
