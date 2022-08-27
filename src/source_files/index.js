@@ -1,3 +1,4 @@
+// -- SVG
 import * as africa from "./svg/africa.svg";
 import * as AL from "./svg/stateAL.svg";
 import * as LA from "./svg/stateLA.svg";
@@ -11,6 +12,19 @@ import * as usaConus from "./svg/usaConus.svg";
 import * as usaCounties from "./svg/usaCounties.svg";
 import * as usaStateNames from "./svg/usaStateNames.svg";
 import * as world from "./svg/world.svg";
+
+// -- JSON
+
+import * as featureCollectionExample from "./json/featureCollectionExample.json";
+import * as nwsTornadoWarnings from "./json/nwsTornadoWarnings.json";
+import * as svgToJsonLouisiana from "./json/svgToJsonLouisiana.json";
+import * as svgToJsonNwsAlert from "./json/svgToJsonNwsAlert.json";
+import * as svgToJsonUsa from "./json/svgToJsonUsa.json";
+import * as swdiTornadoWarningExample from "./json/swdiTornadoWarningExample.json";
+
+// -- TopoJSON
+import * as topoJsonAlbersWithFIPS from "./topoJSON/topojsonAlbersWithFIPS.json";
+import * as topoJsonAlbersWithFIPSProjected from "./topoJSON/topojsonAlbersWithFIPSProjected.json";
 
 export const SVG = {
 	africa,
@@ -28,13 +42,6 @@ export const SVG = {
 	world,
 };
 
-import * as featureCollectionExample from "./json/featureCollectionExample.json";
-import * as nwsTornadoWarnings from "./json/nwsTornadoWarnings.json";
-import * as svgToJsonLouisiana from "./json/svgToJsonLouisiana.json";
-import * as svgToJsonNwsAlert from "./json/svgToJsonNwsAlert.json";
-import * as svgToJsonUsa from "./json/svgToJsonUsa.json";
-import * as swdiTornadoWarningExample from "./json/swdiTornadoWarningExample.json";
-
 export const JSON = {
 	featureCollectionExample,
 	nwsTornadoWarnings,
@@ -42,4 +49,11 @@ export const JSON = {
 	svgToJsonNwsAlert,
 	svgToJsonUsa,
 	swdiTornadoWarningExample,
+};
+
+export const GEO_JSON = {};
+
+export const TOPO_JSON = {
+	topoJsonAlbersWithFIPS,
+	topoJsonAlbersWithFIPSProjected,
 };

@@ -1,4 +1,5 @@
 export * from "./ArcGISMap";
+export * from "./FipsConusMap";
 export * from "./GeoAlbersWarningPolygon";
 export * from "./LouisianaMap";
 export * from "./OBBLinearGradientMap";
