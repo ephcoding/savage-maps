@@ -12,7 +12,7 @@ const fipsUsaMapUrl =
 const fipsAlbersMapUrl =
 	"https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json";
 
-// const equalEarthProjection = d3.geoEqualEarth();
+const equalEarthProjection = d3.geoEqualEarth();
 const albersProjection = d3.geoAlbers();
 
 const SvgMapsPage = () => {
@@ -20,7 +20,17 @@ const SvgMapsPage = () => {
 		<Layout pageName='Maps'>
 			<GeoJsonSVGMapFromTopoJson
 				topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
+				geometryToUse='counties'
+				projection={albersProjection}
+			/>
+			<GeoJsonSVGMapFromTopoJson
+				topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
 				geometryToUse='states'
+				projection={albersProjection}
+			/>
+			<GeoJsonSVGMapFromTopoJson
+				topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
+				geometryToUse='nation'
 				projection={albersProjection}
 			/>
 			{/* <USOULinearGradientMap /> */}
