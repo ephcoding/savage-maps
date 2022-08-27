@@ -1,6 +1,6 @@
 import React from "react";
 import { VectorMap } from "@south-paw/react-vector-maps";
-import usaMap from "../json/usa.json";
+import { svgToJsonUsa } from "../../source_files";
 
 export const SVGMap = () => {
 	const [stateName, setStateName] = React.useState(null);
@@ -19,7 +19,7 @@ export const SVGMap = () => {
 			<MapH3 title='USA: event-based actions' />
 			<ActiveStateName stateName={stateName} />
 			<div className={mapStyles}>
-				<VectorMap {...usaMap} layerProps={stateLayerProps} />
+				<VectorMap {...svgToJsonUsa} layerProps={stateLayerProps} />
 			</div>
 		</>
 	);

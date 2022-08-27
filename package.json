@@ -10,19 +10,24 @@
   },
   "dependencies": {
     "@arcgis/core": "^4.24.7",
+    "@headlessui/react": "^1.6.6",
     "@south-paw/react-vector-maps": "^3.1.0",
     "@tanstack/react-query": "^4.2.1",
     "d3": "^7.6.1",
     "d3-geo": "^3.0.1",
+    "daisyui": "^2.24.0",
     "geojson2svg": "^1.3.3",
     "next": "12.2.5",
+    "next-transpile-modules": "^9.0.0",
     "parse-svg": "^0.0.0",
     "proj4": "^2.8.0",
     "prop-types": "^15.8.1",
-    "react": "18.2.0",
+    "react": "^18.2.0",
+    "react-daisyui": "^2.3.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-simple-maps": "^3.0.0"
+    "react-simple-maps": "^3.0.0",
+    "shapefile": "^0.6.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

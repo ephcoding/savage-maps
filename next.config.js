@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+// req'd to use react daisyui
+const withTM = require("next-transpile-modules")(["react-daisyui"]);
 
-module.exports = nextConfig
+const nextConfig = {
+	reactStrictMode: true,
+	swcMinify: true,
+};
+
+module.exports = withTM(nextConfig);

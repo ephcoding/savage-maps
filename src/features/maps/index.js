@@ -1,4 +1,5 @@
 export * from "./ArcGISMap";
+export * from "./GeoAlbersWarningPolygon";
 export * from "./LouisianaMap";
 export * from "./OBBLinearGradientMap";
 export * from "./OBBVerticalLinearGradientMap";

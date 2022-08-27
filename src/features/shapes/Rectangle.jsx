@@ -1,4 +1,4 @@
-export const BasicSVG = () => {
+export const Rectangle = () => {
 	return (
 		<svg
 			className='border-2 border-white'
