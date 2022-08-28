@@ -27,7 +27,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-simple-maps": "^3.0.0",
-    "shapefile": "^0.6.6"
+    "shapefile": "^0.6.6",
+    "topojson-client": "^3.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
