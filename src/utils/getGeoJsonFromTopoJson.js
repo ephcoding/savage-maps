@@ -3,29 +3,31 @@ import * as d3 from "d3";
 import { feature } from "topojson-client";
 
 export const getGeoJsonFromTopoJson = (topoJsonSource, geometryToUse) => {
-	const [geoJSON, setGeoJSON] = React.useState(null);
-	let topoJSON, geometries;
+	const [geoJsonFromTopoJson, setGeoJsonFromTopoJson] = React.useState();
 
 	React.useEffect(() => {
 		const convertTopoJsonToGeoJson = async () => {
-			topoJSON = await getTopoJsonFromSource(d3, topoJsonSource);
-			geometries = await getTopoJSONGeometry(topoJSON, geometryToUse);
-			setGeoJSON(feature(topoJSON, geometries));
+			const topoJSON = await getTopoJsonFromSource(topoJsonSource); // input TopoJSON object
+			const geometries = getTopoJSONGeometry(topoJSON, geometryToUse); // specific TopoJSON Collection to convert
+			setGeoJsonFromTopoJson({
+				geoJSON: feature(topoJSON, geometries), // converted TopoJSON GeometryCollection
+				topoJSON,
+				geometries,
+			});
 		};
 
 		convertTopoJsonToGeoJson();
 	}, []);
 
-	return { geoJSON, topoJSON, geometries };
+	return geoJsonFromTopoJson;
 };
 
-const getTopoJsonFromSource = async (d3, topoJson) => {
-	typeof topoJson === "object"
-		? topoJson
-		: typeof topoJson === "string"
-		? await d3.json(topoJson)
-		: new Error(
-				"Invalid TopoJson Type.  Requires topoJSON resource url string or a topoJSON object."
-		  );
+const getTopoJsonFromSource = async (topoJson) => {
+	if (typeof topoJson === "object") return topoJson;
+	if (typeof topoJson === "string") return await d3.json(topoJson);
+	console.error(
+		"Cannot convert TopoJSON to GeoJSON: invalid TopoJson Type.  Provide either a url string or a properly formatted TopoJSON object."
+	);
 };
+
 const getTopoJSONGeometry = (topoJson, geometry) => topoJson.objects[geometry];

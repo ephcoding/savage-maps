@@ -8,29 +8,31 @@ import { getGeoJsonFromTopoJson } from "../../utils/getGeoJsonFromTopoJson";
 // ------------------------------------------------------------
 
 export const GeoJsonSVGMapFromTopoJson = ({
-  topoJsonSource,
-  geometryToUse,
-  projection,
-  children,
+	topoJsonSource,
+	geometryToUse,
+	projection,
+	children,
 }) => {
-  const [geoJsonGeometry, setGeoJsonGeometry] = React.useState(null);
-  const { geoJson } = getGeoJsonFromTopoJson(topoJsonSource, geometryToUse);
+	const [geoJsonGeometry, setGeoJsonGeometry] = React.useState(null);
 
-  console.log(">> geoJsonFromTopoJson\n", geoJson);
+	const fromTopoJSON = getGeoJsonFromTopoJson(topoJsonSource, geometryToUse);
 
-  React.useEffect(() => {
-    if (geoJson) setGeoJsonGeometry(geoJson);
-  }, [geoJson]);
+	React.useEffect(() => {
+		if (fromTopoJSON) {
+			console.log(fromTopoJSON);
+			setGeoJsonGeometry(fromTopoJSON?.geoJSON);
+		}
+	}, [fromTopoJSON]);
 
-  return (
-    <svg viewBox="0 0 975 610" className="border-2 border-white">
-      {geoJsonGeometry && (
-        <GeoJsonSvgProjectionPath
-          geometry={geoJsonGeometry}
-          projection={projection}
-        />
-      )}
-      {children}
-    </svg>
-  );
+	return (
+		<svg viewBox='0 0 975 610' className='border-2 border-white'>
+			{geoJsonGeometry && (
+				<GeoJsonSvgProjectionPath
+					geometry={geoJsonGeometry}
+					projection={projection}
+				/>
+			)}
+			{children}
+		</svg>
+	);
 };
