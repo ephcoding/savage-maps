@@ -1,8 +1,8 @@
 import React from "react";
-import { JSON } from "../../source_files";
+import UsaMap from "../../geometry_files/json/rvm_country_usa.json";
 import * as d3 from "d3";
 
-export const Polygon = () => {
+export const PolygonHull = () => {
 	const svgRef = React.useRef(null);
 
 	React.useEffect(() => {

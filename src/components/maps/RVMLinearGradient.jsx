@@ -1,10 +1,10 @@
-import { svgToJsonUsa } from "../../source_files";
+import UsaMap from "../../geometry_files/json/rvm_country_usa.json";
 import { VectorMap } from "@south-paw/react-vector-maps";
 
-export const OBBLinearGradientMap = () => {
+export const RVMLinearGradient = () => {
 	return (
 		<div className='stroke-neutral-600'>
-			<VectorMap {...svgToJsonUsa} fill='url(#gradient3)'>
+			<VectorMap {...UsaMap} fill='url(#gradient3)'>
 				<defs>
 					<linearGradient id='gradient3'>
 						<stop offset='0%' stopColor='#ff0' />

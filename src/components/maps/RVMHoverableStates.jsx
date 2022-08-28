@@ -1,8 +1,8 @@
 import React from "react";
 import { VectorMap } from "@south-paw/react-vector-maps";
-import { svgToJsonUsa } from "../../source_files";
+import UsaMap from "../../geometry_files/json/rvm_country_usa.json";
 
-export const SVGMap = () => {
+export const RVMHoverableStates = () => {
 	const [stateName, setStateName] = React.useState(null);
 	const mapStyles = "stroke-10 stroke-stone-800 fill-stone-100";
 	const stateLayerStyles = `hover:fill-red-500`;
@@ -16,10 +16,9 @@ export const SVGMap = () => {
 
 	return (
 		<>
-			<MapH3 title='USA: event-based actions' />
 			<ActiveStateName stateName={stateName} />
 			<div className={mapStyles}>
-				<VectorMap {...svgToJsonUsa} layerProps={stateLayerProps} />
+				<VectorMap {...UsaMap} layerProps={stateLayerProps} />
 			</div>
 		</>
 	);

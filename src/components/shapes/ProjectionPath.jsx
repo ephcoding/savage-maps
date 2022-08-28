@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 
-export const GeoJsonSvgProjectionPath = ({ geoJsonFeatures, projection }) => {
+export const ProjectionPath = ({ geoJsonFeatures, projection }) => {
 	const setSvgPath = d3.geoPath(projection);
 	const { features } = geoJsonFeatures;
 

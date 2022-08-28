@@ -9,7 +9,7 @@ import React from "react";
 // import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 // import MapImageLayer from "@arcgis/core/layers/MapImageLayer";
 
-export const ArcGISTestMap = () => {
+export const ArcGISMap = () => {
 	const mapRef = React.useRef(null);
 
 	// React.useEffect(() => {

@@ -1,2 +1,2 @@
-export * from "./OBBLinearGradient";
-export * from "./USOULinearGradient";
+export * from "./LinearGradientCover";
+export * from "./LinearGradientEach";

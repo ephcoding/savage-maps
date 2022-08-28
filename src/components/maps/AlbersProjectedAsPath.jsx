@@ -1,5 +1,5 @@
 import React from "react";
-import { GeoJsonSvgProjectionPath } from "../shapes";
+import { ProjectionPath } from "../shapes";
 import { getGeoJsonFromTopoJson } from "../../utils/getGeoJsonFromTopoJson";
 
 // ----- FOLLOWED THIS VID TO GET WORKING PROTOTYPE ----------
@@ -7,8 +7,8 @@ import { getGeoJsonFromTopoJson } from "../../utils/getGeoJsonFromTopoJson";
 // -- https://unpkg.com/world-atlas@2.0.2/countries-50m.json
 // ------------------------------------------------------------
 
-export const GeoJsonSVGMapFromTopoJson = ({
-	topoJsonSource,
+export const AlbersProjectedAsPath = ({
+	topoJson,
 	geometryToUse,
 	projection,
 	children,
@@ -20,7 +20,7 @@ export const GeoJsonSVGMapFromTopoJson = ({
 		geoJsonGeometry
 	);
 
-	const fromTopoJSON = getGeoJsonFromTopoJson(topoJsonSource, geometryToUse);
+	const fromTopoJSON = getGeoJsonFromTopoJson(topoJson, geometryToUse);
 
 	React.useEffect(() => {
 		if (fromTopoJSON) {
@@ -36,7 +36,7 @@ export const GeoJsonSVGMapFromTopoJson = ({
 			className='border-2 border-white'
 		>
 			{geoJsonGeometry && (
-				<GeoJsonSvgProjectionPath
+				<ProjectionPath
 					geoJsonFeatures={geoJsonGeometry}
 					projection={projection}
 				/>
