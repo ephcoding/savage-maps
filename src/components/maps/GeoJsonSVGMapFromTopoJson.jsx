@@ -15,20 +15,29 @@ export const GeoJsonSVGMapFromTopoJson = ({
 }) => {
 	const [geoJsonGeometry, setGeoJsonGeometry] = React.useState(null);
 
+	console.log(
+		">> geoJsonGeometry for GeoJsonSvgProjectionPath: \n",
+		geoJsonGeometry
+	);
+
 	const fromTopoJSON = getGeoJsonFromTopoJson(topoJsonSource, geometryToUse);
 
 	React.useEffect(() => {
 		if (fromTopoJSON) {
-			console.log(fromTopoJSON);
 			setGeoJsonGeometry(fromTopoJSON?.geoJSON);
 		}
 	}, [fromTopoJSON]);
 
 	return (
-		<svg viewBox='0 0 975 610' className='border-2 border-white'>
+		<svg
+			// width='975px'
+			// height='auto'
+			viewBox='0 0 975 610'
+			className='border-2 border-white'
+		>
 			{geoJsonGeometry && (
 				<GeoJsonSvgProjectionPath
-					geometry={geoJsonGeometry}
+					geoJsonFeatures={geoJsonGeometry}
 					projection={projection}
 				/>
 			)}

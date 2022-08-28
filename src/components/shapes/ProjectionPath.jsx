@@ -1,8 +1,8 @@
 import * as d3 from "d3";
 
-export const GeoJsonSvgProjectionPath = ({ geometry, projection }) => {
+export const GeoJsonSvgProjectionPath = ({ geoJsonFeatures, projection }) => {
 	const setSvgPath = d3.geoPath(projection);
-	const { features } = geometry;
+	const { features } = geoJsonFeatures;
 
 	return (
 		<g>
@@ -11,7 +11,7 @@ export const GeoJsonSvgProjectionPath = ({ geometry, projection }) => {
 					<path
 						key={feature.id}
 						d={setSvgPath(feature)}
-						className='stroke-red-500'
+						className='stroke-white'
 					/>
 				);
 			})}

@@ -20,27 +20,27 @@ const SvgMapsPage = () => {
 	return (
 		<Layout pageName='Maps'>
 			<div className='grid gap-16 grid-cols-2 grid-flow-row'>
-				{/* <GeoJsonSVGMapFromTopoJson
-          topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
-          geometryToUse="counties"
-          projection={albersProjection}
-        /> */}
+				<GeoJsonSVGMapFromTopoJson
+					topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
+					geometryToUse='counties'
+					projection={albersProjection}
+				/>
 				<GeoJsonSVGMapFromTopoJson
 					topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
 					geometryToUse='states'
 					projection={albersProjection}
 				>
-					{/* <GeoJsonSvgProjectionPath
-            geometry={JSON.swdiTornadoWarningExample}
-            projection={albersProjection}
-          /> */}
+					<GeoJsonSvgProjectionPath
+						geometry={JSON.swdiTornadoWarningExample}
+						projection={albersProjection}
+					/>
 				</GeoJsonSVGMapFromTopoJson>
 				{/* <GeoJsonSVGMapFromTopoJson
           topoJsonSource={TOPO_JSON.topoJsonAlbersWithFIPS}
           geometryToUse="nation"
           projection={albersProjection}
         /> */}
-				{/* <USOULinearGradientMap /> */}
+				<USOULinearGradientMap />
 			</div>
 		</Layout>
 	);
