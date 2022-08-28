@@ -7,31 +7,34 @@ import { feature } from "topojson-client";
 // ELSE IF {} then continue logic starting at [geometryCollection] value assignment
 
 export const getGeoJsonFromTopoJson = (topoJsonSource, geometryToUse) => {
-	const [geoJsonGeometryCollection, setGeoJsonGeometryCollection] =
-		React.useState(null);
+  const [geoJsonGeometryCollection, setGeoJsonGeometryCollection] =
+    React.useState(null);
 
-	React.useEffect(() => {
-		const convert = async () => {
-			let topoJSONMap, topoJsonGeometryCollection;
+  React.useEffect(() => {
+    const convert = async () => {
+      let topoJSONMap, topoJsonGeometryCollection;
 
-			if (typeof window !== "undefined") {
-				typeof topoJsonSource === "object"
-					? (topoJSONMap = topoJsonSource)
-					: typeof topoJsonSource === "string"
-					? (topoJSONMap = await d3.json(topoJsonSource))
-					: new Error(
-							"Unsupported topoJsonSource type used: [url: string, topoJson: object]"
-					  );
+      if (typeof window !== "undefined") {
+        typeof topoJsonSource === "object"
+          ? (topoJSONMap = topoJsonSource)
+          : typeof topoJsonSource === "string"
+          ? (topoJSONMap = await d3.json(topoJsonSource))
+          : new Error(
+              "Unsupported topoJsonSource type used: [url: string, topoJson: object]"
+            );
 
-				topoJsonGeometryCollection = topoJSONMap.objects[geometryToUse];
-				setGeoJsonGeometryCollection(
-					feature(topoJSONMap, topoJsonGeometryCollection)
-				);
-			}
-		};
+        topoJsonGeometryCollection = topoJSONMap.objects[geometryToUse];
+        setGeoJsonGeometryCollection(
+          feature(topoJSONMap, topoJsonGeometryCollection)
+        );
+      }
+    };
 
-		convert();
-	}, []);
+    convert();
+  }, []);
 
-	return geoJsonGeometryCollection;
+  if (geoJsonGeometryCollection)
+    console.log(">> GeoJSON: ", geoJsonGeometryCollection);
+
+  return geoJsonGeometryCollection;
 };

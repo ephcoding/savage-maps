@@ -1,5 +1,5 @@
 export * from "./ArcGISMap";
-export * from "./GeoAlbersWarningPolygon";
+export * from "./NwsAlertPolygon";
 export * from "./GeoJsonSVGMapFromTopoJson";
 export * from "./LouisianaMap";
 export * from "./OBBLinearGradientMap";
