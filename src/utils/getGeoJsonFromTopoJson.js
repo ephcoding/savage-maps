@@ -2,39 +2,30 @@ import React from "react";
 import * as d3 from "d3";
 import { feature } from "topojson-client";
 
-// TODO: make topoJSON arg optionally a "" || {}
-// IF "" THEN fetch from URL with d3.json()
-// ELSE IF {} then continue logic starting at [geometryCollection] value assignment
-
 export const getGeoJsonFromTopoJson = (topoJsonSource, geometryToUse) => {
-  const [geoJsonGeometryCollection, setGeoJsonGeometryCollection] =
-    React.useState(null);
+	const [geoJSON, setGeoJSON] = React.useState(null);
+	let topoJSON, geometries;
 
-  React.useEffect(() => {
-    const convert = async () => {
-      let topoJSONMap, topoJsonGeometryCollection;
+	React.useEffect(() => {
+		const convertTopoJsonToGeoJson = async () => {
+			topoJSON = await getTopoJsonFromSource(d3, topoJsonSource);
+			geometries = await getTopoJSONGeometry(topoJSON, geometryToUse);
+			setGeoJSON(feature(topoJSON, geometries));
+		};
 
-      if (typeof window !== "undefined") {
-        typeof topoJsonSource === "object"
-          ? (topoJSONMap = topoJsonSource)
-          : typeof topoJsonSource === "string"
-          ? (topoJSONMap = await d3.json(topoJsonSource))
-          : new Error(
-              "Unsupported topoJsonSource type used: [url: string, topoJson: object]"
-            );
+		convertTopoJsonToGeoJson();
+	}, []);
 
-        topoJsonGeometryCollection = topoJSONMap.objects[geometryToUse];
-        setGeoJsonGeometryCollection(
-          feature(topoJSONMap, topoJsonGeometryCollection)
-        );
-      }
-    };
-
-    convert();
-  }, []);
-
-  if (geoJsonGeometryCollection)
-    console.log(">> GeoJSON: ", geoJsonGeometryCollection);
-
-  return geoJsonGeometryCollection;
+	return { geoJSON, topoJSON, geometries };
 };
+
+const getTopoJsonFromSource = async (d3, topoJson) => {
+	typeof topoJson === "object"
+		? topoJson
+		: typeof topoJson === "string"
+		? await d3.json(topoJson)
+		: new Error(
+				"Invalid TopoJson Type.  Requires topoJSON resource url string or a topoJSON object."
+		  );
+};
+const getTopoJSONGeometry = (topoJson, geometry) => topoJson.objects[geometry];
