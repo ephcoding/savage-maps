@@ -21,20 +21,21 @@ export const AlbersProjectedAsPath = ({ children }) => {
 		generateGeoJson();
 	}, []);
 
-	geoJsonGeometry && console.log(geoJsonGeometry);
-
 	return (
-		<svg viewBox='0 0 975 610' className='border-2 border-white fill-blue-500'>
+		<svg
+			viewBox='0 0 975 610'
+			className='stroke-blue-500 fill-[url(#gradient1)]'
+		>
 			{geoJsonGeometry &&
 				geoJsonGeometry.features.map((feature) => {
-					return (
-						<path
-							key={feature.id}
-							d={createSVGPath(feature)}
-							className='stroke-white'
-						/>
-					);
+					return <path key={feature.id} d={createSVGPath(feature)} />;
 				})}
+			<defs>
+				<linearGradient id='gradient1' gradientUnits='userSpaceOnUse'>
+					<stop offset='0%' stopColor='#06f' />
+					<stop offset='70%' stopColor='#111' />
+				</linearGradient>
+			</defs>
 		</svg>
 	);
 };

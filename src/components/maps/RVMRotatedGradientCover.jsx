@@ -6,8 +6,9 @@ export const RVMRotatedGradientCover = () => {
 		<div className='stroke-neutral-600'>
 			<VectorMap
 				{...UsaMap}
-				fill='url(#gradient2)'
+				// fill='url(#gradient2)'
 				layerProps={{ className: "hover:fill-yellow-400" }}
+				className='stroke-white fill-[url(#gradient2)]'
 			>
 				<defs>
 					<linearGradient
