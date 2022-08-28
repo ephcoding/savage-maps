@@ -3,6 +3,7 @@ import { VectorMap } from "@south-paw/react-vector-maps";
 import {
 	AlbersProjectedAsPath,
 	RVMHoverableStates,
+	RVMOverlayShape,
 	RVMRadialGradient,
 	RVMRotatedGradientCover,
 } from "../components/maps";
@@ -22,6 +23,9 @@ export default function Home() {
 				</div>
 				<div>
 					<RVMRadialGradient />
+				</div>
+				<div>
+					<RVMOverlayShape />
 				</div>
 			</div>
 		</Layout>

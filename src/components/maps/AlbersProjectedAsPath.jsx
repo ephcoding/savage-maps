@@ -15,6 +15,7 @@ export const AlbersProjectedAsPath = ({ children }) => {
 	React.useEffect(() => {
 		const generateGeoJson = async () => {
 			const geoJSON = await feature(AlbersTopoJSON, "states");
+			console.log(geoJSON);
 			setGeoJsonGeometry(geoJSON);
 		};
 
@@ -26,6 +27,7 @@ export const AlbersProjectedAsPath = ({ children }) => {
 			viewBox='0 0 975 610'
 			className='stroke-blue-500 fill-[url(#gradient1)]'
 		>
+			{/* -- create SVG path from GeoJSON features */}
 			{geoJsonGeometry &&
 				geoJsonGeometry.features.map((feature) => {
 					return <path key={feature.id} d={createSVGPath(feature)} />;
