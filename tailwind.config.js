@@ -5,7 +5,13 @@ module.exports = {
 		"node_modules/daisyui/dist/**/*.js",
 		"node_modules/react-daisyui/dist/**/*.js",
 	],
-	theme: { extend: {} },
+	theme: {
+		extend: {
+			colors: {
+				bg: "#000",
+			},
+		},
+	},
 	plugins: [require("daisyui")],
 	daisyui: {
 		styled: true,

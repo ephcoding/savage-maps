@@ -8,39 +8,45 @@ import { feature } from "topojson-client";
 import AlbersTopoJSON from "../../geometry_files/topoJSON/albers_fips.json";
 
 export const AlbersCounties = ({ children }) => {
-  const [geoJsonGeometry, setGeoJsonGeometry] = React.useState(null);
-  const projection = d3.geoAlbers();
-  const createSVGPath = d3.geoPath(projection);
+	const [geoJsonGeometry, setGeoJsonGeometry] = React.useState(null);
+	const projection = d3.geoAlbers();
+	const createSVGPath = d3.geoPath(projection);
 
-  React.useEffect(() => {
-    const generateGeoJson = () => {
-      const geoJSON = feature(AlbersTopoJSON, "counties");
-      console.log(geoJSON);
-      setGeoJsonGeometry(geoJSON);
-    };
+	React.useEffect(() => {
+		const generateGeoJson = () => {
+			const geoJSON = feature(AlbersTopoJSON, "counties");
+			console.log(geoJSON);
+			setGeoJsonGeometry(geoJSON);
+		};
 
-    generateGeoJson();
-  }, []);
+		generateGeoJson();
+	}, []);
 
-  return (
-    <svg viewBox="0 0 975 610" className="stroke-blue-500 fill-charcoal-200">
-      {/* -- create SVG path from GeoJSON features */}
-      {geoJsonGeometry &&
-        geoJsonGeometry.features.map((feature) => {
-          return (
-            <path
-              key={feature.id}
-              d={createSVGPath(feature)}
-              className="hover:fill-yellow-400"
-            />
-          );
-        })}
-      {/* <defs> */}
-      {/* <linearGradient id="gradient1" gradientUnits="userSpaceOnUse">
+	return (
+		<>
+			<h2 className='text-left mb-4'>Albers Projection: hoverable counties</h2>
+			<svg
+				viewBox='60 0 850 531'
+				className='stroke-blue-500 fill-charcoal-200 mx-auto'
+			>
+				{/* -- create SVG path from GeoJSON features */}
+				{geoJsonGeometry &&
+					geoJsonGeometry.features.map((feature) => {
+						return (
+							<path
+								key={feature.id}
+								d={createSVGPath(feature)}
+								className='hover:fill-yellow-400'
+							/>
+						);
+					})}
+				{/* <defs> */}
+				{/* <linearGradient id="gradient1" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#06f" />
           <stop offset="70%" stopColor="#111" />
         </linearGradient>
       </defs> */}
-    </svg>
-  );
+			</svg>
+		</>
+	);
 };

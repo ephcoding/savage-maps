@@ -4,6 +4,7 @@ import { VectorMap } from "@south-paw/react-vector-maps";
 export const RVMRadialGradient = () => {
 	return (
 		<div className='stroke-neutral-600'>
+			<h2 className='text-left mb-4'>React Vector Map: radial gradient</h2>
 			<VectorMap
 				{...UsaMap}
 				// fill='url(#gradient2)'

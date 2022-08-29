@@ -16,6 +16,7 @@ export const RVMHoverableStates = () => {
 
 	return (
 		<>
+			<h2 className='text-left mb-4'>React Vector Map: hoverable states</h2>
 			<ActiveStateName stateName={stateName} />
 			<div className={mapStyles}>
 				<VectorMap {...UsaMap} layerProps={stateLayerProps} />
