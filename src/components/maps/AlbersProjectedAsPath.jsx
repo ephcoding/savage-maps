@@ -45,7 +45,6 @@ export const AlbersProjectedAsPath = ({ children }) => {
 					points='220,140 250,210 190,230 170,220'
 					className='fill-red-500/70 stroke-neutral-900'
 				/>
-				{/* </svg> */}
 			</svg>
 		</>
 	);

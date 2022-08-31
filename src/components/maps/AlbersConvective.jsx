@@ -1,60 +1,48 @@
-import UsaMap from "../../geometry_files/json/rvm_country_usa.json";
-import { VectorMap } from "@south-paw/react-vector-maps";
-import { D3GeoPath } from "../shapes";
 import * as d3 from "d3";
+import React from "react";
+import { feature } from "topojson-client";
+import AlbersTopoJSON from "../../geometry_files/topoJSON/albers_fips.json";
 
-export const RVMOverlayShape = () => {
+// <?xml version="1.0" encoding="utf-8" standalone="no"?>
+// <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+export const AlbersConvective = ({ children }) => {
+	const [geoJsonGeometry, setGeoJsonGeometry] = React.useState(null);
 	const projection = d3.geoAlbers();
 	const createSVGPath = d3.geoPath(projection);
 
+	React.useEffect(() => {
+		const generateGeoJson = () => {
+			const geoJSON = feature(AlbersTopoJSON, "states");
+			console.log(geoJSON);
+			setGeoJsonGeometry(geoJSON);
+		};
+
+		generateGeoJson();
+	}, []);
+
 	return (
-		<div className='fill-transparent stroke-white'>
-			<h2 className='text-left mb-4'>React Vector Map: polygon overlay</h2>
-			<VectorMap {...UsaMap}>
-				<polygon
-					points='220,140 250,210 190,230 170,220'
-					className='fill-red-500/70 stroke-neutral-900'
-				/>
-				{/* <path
-          id="warning-1"
-          title="my-first-warning"
-          d="M62.31466666666666,42.16888888888889 62.336,42.083555555555556 62.52088888888889,42.06222222222222 62.47822222222222,42.24711111111111 62.31466666666666,42.16888888888889Z"
-          stroke="white"
-          fill="red"
-        /> */}
-				{/* {[
-          {
-            type: "Feature",
-            geometry: {
-              type: "Polygon",
-              coordinates: [
-                [
-                  [-92.37, 30.7],
-                  [-92.34, 30.82],
-                  [-92.08, 30.85],
-                  [-92.14, 30.59],
-                  [-92.37, 30.7],
-                ],
-              ],
-            },
-          },
-        ].map((feature) => {
-          return (
-            <path
-              key={feature.id}
-              d={createSVGPath(feature)}
-              stroke="red"
-              fill="red"
-            />
-          );
-        })} */}
+		<>
+			<h2 className='text-left mb-4'>
+				Albers Projection: SPC convective outlook
+			</h2>
+			<svg
+				viewBox='60 0 850 531'
+				className='stroke-blue-500 fill-[url(#gradient1)]'
+			>
+				{/* -- create SVG path from GeoJSON features */}
+				{geoJsonGeometry &&
+					geoJsonGeometry.features.map((feature) => {
+						return <path key={feature.id} d={createSVGPath(feature)} />;
+					})}
+
 				<svg
 					version='1.1'
 					// xmlns='http://www.w3.org/2000/svg'
 					// xmlns:xlink='http://www.w3.org/1999/xlink'
 					// width='300pt'
 					// height='300pt'
-					viewBox='-30 0 300 300'
+					viewBox='-50 0 300 300'
 					// viewBox='0 0 850 531'
 					// xml:space='preserve'
 					// enable-background='new 0 0 300 300'
@@ -86,7 +74,7 @@ export const RVMOverlayShape = () => {
 						<g opacity='0.75'></g>
 					</g>
 				</svg>
-			</VectorMap>
-		</div>
+			</svg>
+		</>
 	);
 };
