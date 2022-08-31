@@ -198,3 +198,18 @@ _Considerations_
 1. [ident storm reports by date](https://www.spc.noaa.gov/climo/online/)
 1. [SPC interactive local storm report display](https://www.spc.noaa.gov/exper/reports/)
 1. [locate shapefiles in NOAA NEXRAD inventory](https://www.ncdc.noaa.gov/nexradinv/)
+
+// CONVERT TORNADO WARNING GeoJSON POLYGON COORDINATES TO SVG PATH
+// ( https://datavis.tech/datavis-2020/ )
+// ( https://datavis.tech/datavis-2020-episode-3-finding-visualizations/ ) - finding viz's
+// ( https://www.youtube.com/watch?v=xkBheRZTkaw ) 2022 course
+// (https://youtu.be/mzZ1fCXq-uo?t=615) - ep. 20 GeoJSON to SVG path
+// (https://www.youtube.com/watch?v=xkBheRZTkaw) - D3 course
+// (http://using-d3js.com/05_01_paths.html#h_rvwUvGrTBV)
+// (https://github.com/d3/d3-geo/blob/main/README.md#geoAlbers)
+// ******************************\*\*\*******************************
+
+// ----- FOLLOWED THIS VID TO GET WORKING PROTOTYPE ----------
+// -- https://www.youtube.com/watch?v=mzZ1fCXq-uo&t=615s
+// -- https://unpkg.com/world-atlas@2.0.2/countries-50m.json
+// ------------------------------------------------------------

@@ -2,36 +2,32 @@ import React from "react";
 import * as d3 from "d3";
 import { feature } from "topojson-client";
 
-// TODO: make topoJSON arg optionally a "" || {}
-// IF "" THEN fetch from URL with d3.json()
-// ELSE IF {} then continue logic starting at [geometryCollection] value assignment
-
 export const getGeoJsonFromTopoJson = (topoJsonSource, geometryToUse) => {
-	const [geoJsonGeometryCollection, setGeoJsonGeometryCollection] =
-		React.useState(null);
+	const [geoJsonFromTopoJson, setGeoJsonFromTopoJson] = React.useState();
 
 	React.useEffect(() => {
-		const convert = async () => {
-			let topoJSONMap, topoJsonGeometryCollection;
-
-			if (typeof window !== "undefined") {
-				typeof topoJsonSource === "object"
-					? (topoJSONMap = topoJsonSource)
-					: typeof topoJsonSource === "string"
-					? (topoJSONMap = await d3.json(topoJsonSource))
-					: new Error(
-							"Unsupported topoJsonSource type used: [url: string, topoJson: object]"
-					  );
-
-				topoJsonGeometryCollection = topoJSONMap.objects[geometryToUse];
-				setGeoJsonGeometryCollection(
-					feature(topoJSONMap, topoJsonGeometryCollection)
-				);
-			}
+		const convertTopoJsonToGeoJson = async () => {
+			const topoJSON = await getTopoJsonFromSource(topoJsonSource); // input TopoJSON object
+			const geometries = getTopoJSONGeometry(topoJSON, geometryToUse); // specific TopoJSON Collection to convert
+			setGeoJsonFromTopoJson({
+				geoJSON: feature(topoJSON, geometries), // converted TopoJSON GeometryCollection
+				topoJSON,
+				geometries,
+			});
 		};
 
-		convert();
+		convertTopoJsonToGeoJson();
 	}, []);
 
-	return geoJsonGeometryCollection;
+	return geoJsonFromTopoJson;
 };
+
+const getTopoJsonFromSource = async (topoJson) => {
+	if (typeof topoJson === "object") return topoJson;
+	if (typeof topoJson === "string") return await d3.json(topoJson);
+	console.error(
+		"Cannot convert TopoJSON to GeoJSON: invalid TopoJson Type.  Provide either a url string or a properly formatted TopoJSON object."
+	);
+};
+
+const getTopoJSONGeometry = (topoJson, geometry) => topoJson.objects[geometry];

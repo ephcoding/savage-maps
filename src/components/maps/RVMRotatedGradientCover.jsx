@@ -1,13 +1,15 @@
-import { svgToJsonUsa } from "../../source_files";
+import UsaMap from "../../geometry_files/json/rvm_country_usa.json";
 import { VectorMap } from "@south-paw/react-vector-maps";
 
-export const USOURotatedGradientMap = () => {
+export const RVMRotatedGradientCover = () => {
 	return (
 		<div className='stroke-neutral-600'>
+			<h2 className='text-left mb-4'>React Vector Map: radial gradient</h2>
 			<VectorMap
-				{...svgToJsonUsa}
-				fill='url(#gradient2)'
+				{...UsaMap}
+				// fill='url(#gradient2)'
 				layerProps={{ className: "hover:fill-yellow-400" }}
+				className='stroke-white fill-[url(#gradient2)]'
 			>
 				<defs>
 					<linearGradient

@@ -1,12 +1,17 @@
-import { JSON } from "../../source_files";
+import UsaMap from "../../geometry_files/json/rvm_country_usa.json";
 import { VectorMap } from "@south-paw/react-vector-maps";
+import { ProjectionPath } from "../shapes";
+import * as d3 from "d3";
 
-export const USOULinearGradientMap = () => {
+const albersProjection = d3.geoAlbers();
+
+export const RVMLinearGradientCover = () => {
 	return (
 		<div>
+			<h2 className='text-left mb-4'>React Vector Map: linear gradient</h2>
 			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
 				<VectorMap
-					{...JSON.svgToJsonUsa}
+					{...UsaMap}
 					className='stroke-blue-400 fill-[url(#gradient1)]'
 				>
 					<defs>
@@ -16,13 +21,6 @@ export const USOULinearGradientMap = () => {
 						</linearGradient>
 					</defs>
 				</VectorMap>
-
-				<svg xmlns='http://www.w3.org/2000/svg' viewBox='-180 -290 800 800'>
-					<polygon
-						points='220,140 250,210 190,230 170,220'
-						className='fill-red-500/70 stroke-neutral-900'
-					/>
-				</svg>
 			</svg>
 		</div>
 	);
