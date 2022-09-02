@@ -11,10 +11,10 @@ export const RVMOverlayShape = () => {
 		<div className='fill-transparent stroke-white'>
 			<h2 className='text-left mb-4'>React Vector Map: polygon overlay</h2>
 			<VectorMap {...UsaMap}>
-				<polygon
+				{/* <polygon
 					points='220,140 250,210 190,230 170,220'
 					className='fill-red-500/70 stroke-neutral-900'
-				/>
+				/> */}
 				{/* <path
           id="warning-1"
           title="my-first-warning"

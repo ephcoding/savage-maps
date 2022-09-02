@@ -28,11 +28,11 @@ export default function Home() {
 			</div>
 			<div className='bg-gradient-to-r from-zinc-900 to-zinc-600 p-6 rounded-lg shadow-black shadow-lg'>
 				<RVMRadialGradient />
-			</div>
+			</div> */}
 			<div className='bg-gradient-to-r from-zinc-900 to-zinc-600 p-6 rounded-lg shadow-black shadow-lg'>
 				<RVMOverlayShape />
 			</div>
-			<div className='bg-gradient-to-r from-zinc-900 to-zinc-600 p-6 rounded-lg shadow-black shadow-lg'>
+			{/* <div className='bg-gradient-to-r from-zinc-900 to-zinc-600 p-6 rounded-lg shadow-black shadow-lg'>
 				<AlbersCounties />
 			</div> */}
 			{/* </div> */}
