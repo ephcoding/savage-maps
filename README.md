@@ -1,34 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id='intro' align='center'>
+  <img alt='readme title graphic' src='./assets/readme-title.png'>
+</div>
 
-## Getting Started
+[SaVaGe Maps](https://savagemaps.com) is where I host my [D3](https://d3js.org)-fueled map exploits. I figured it was finally time to curate a single map resource for future me since most of my side projects go unpublished or end up in an all-too-cliché "private" repo.
 
-First, run the development server:
+Make sure to check out the [Resources](#resources) section of the README for a list of all the different sites, docs, and people that I found useful when trying to put these maps together.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Thanks for checking out the Savage Maps repo. Hopefully, this project helps you build some Savage maps of your own!
+
+<br>
+
+<div id='license' align='center'>
+  <img alt='readme license section graphic' src='./assets/readme-license.png'>
+</div>
+
+### MIT License (MIT)
+
+Copyright © 2023 Ephraim Smith
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<div id='how-to-use' align='center'>
+  <img alt='readme how-to-use section graphic' src='./assets/readme-how-to-use.png'>
+</div>
+
+### **_Clone the Repo_**
+
+```shellscript
+git clone https://github.com/ephcoding/savage-maps.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **_Nav to Project_**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```shellscript
+cd <path/to>/savage-maps
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### **_Install Packages_**
 
-## Learn More
+```shellscript
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+OR
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+yarn
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### **_Run It_**
 
-## Deploy on Vercel
+```shellscript
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+OR
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+yarn run dev
+```
+
+<div id='resources' align='center'>
+  <img alt='readme resources section graphic' src='./assets/readme-resources.png'>
+</div>
+
+### **_Production_**
+
+`D3.js` | open source JavaScript data visualization library
+
+`next` | React framework
+
+`react` | JavaScript library for creating user interfaces
+
+`react-dom` | React package for working with the DOM
+
+`react-query` | Hooks for managing, caching and syncing asynchronous and remote data in React
+
+### **_Development_**
+
+`jest` | JavaScript test runner
+
+`tailwindcss` | utility-first CSS framework
+
+`postcss` | JavaScript plugins that analyze and transform CSS
+
+<div id='connect' align='center'>
+  <img alt='readme connect section graphic' src='./assets/readme-connect.png'>
+</div>
+
+**Email:** [ephraimjsmith@gmail.com](mailto:ephraimjsmith@gmail.com)
+
+**LinkedIn:** [ephraimjsmith](https://linkedin.com/in/ephraimsmithdev)
+
+**GitHub:** [ephcoding](https://github.com/ephcoding)
+
+**Twitter:** [\_ephraimsmith](https://twitter.com/ephraimsmithdev)
