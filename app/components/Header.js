@@ -1,16 +1,23 @@
 "use client";
-import NextImage from "next/image";
-import savageLogo from "../../public/savage-maps.png";
 import { Navbar } from "react-daisyui";
+import { useTheme } from "react-daisyui";
+
+import { SavageLogo } from "./SavageLogo";
 
 export const Header = () => {
-  return (
-    <header>
-      <Navbar data-theme="light">
-        <Navbar.Start>
-          <NextImage src={savageLogo} alt="SaVaGe Maps Logo" />
-        </Navbar.Start>
-      </Navbar>
-    </header>
-  );
+	const theme = useTheme();
+
+	console.log("theme: ", theme);
+
+	return (
+		<header>
+			<Navbar className='bg-black'>
+				<Navbar.Start>
+					<div className='w-36'>
+						<SavageLogo />
+					</div>
+				</Navbar.Start>
+			</Navbar>
+		</header>
+	);
 };
