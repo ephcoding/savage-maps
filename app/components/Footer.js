@@ -40,7 +40,7 @@ const inspiration = [
 export const Footer = () => {
 	return (
 		<footer>
-			<DaisyFooter className='bg-black'>
+			<DaisyFooter className='bg-black p-6'>
 				<div>
 					<Title title='Dev Resources' />
 					<Links links={devResources} />

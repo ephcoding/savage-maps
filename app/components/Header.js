@@ -11,7 +11,7 @@ export const Header = () => {
 
 	return (
 		<header>
-			<Navbar className='bg-black'>
+			<Navbar className='bg-black p-6'>
 				<Navbar.Start>
 					<div className='w-36'>
 						<SavageLogo />
