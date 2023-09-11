@@ -1,4 +1,3 @@
-import * as topojson from "topojson-client";
 import {
   geoPath,
   geoAzimuthalEqualArea,
