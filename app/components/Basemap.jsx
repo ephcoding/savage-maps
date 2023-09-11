@@ -2,12 +2,11 @@ import { geoPath } from "d3";
 
 export const Basemap = ({
   geoJSONFeatures,
-  projection,
+  pathGenerator,
   height = 975,
   width = 610,
   pathProps,
 }) => {
-  const pathGenerator = geoPath(projection);
   const fill = props.fill || "none";
   const stroke = props.stroke || "white";
 
