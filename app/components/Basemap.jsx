@@ -1,26 +1,41 @@
-import { geoPath } from "d3";
-
 export const Basemap = ({
-  geoJSONFeatures,
-  pathGenerator,
-  height = 975,
-  width = 610,
-  pathProps,
+  geoJSON,
+  height = 610,
+  pathGen,
+  pathProps = {},
+  width = 975,
 }) => {
-  const fill = props.fill || "none";
-  const stroke = props.stroke || "white";
+  geoJSON && console.log("geoJSON:\n", geoJSON);
+
+  const isMultiLineString = geoJSON.type === "MultiLineString";
 
   return (
-    <svg viewbox={`0 0 ${width} ${height}`} xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox={`0 0 ${width} ${height}`} xmlns="http://www.w3.org/2000/svg">
       <g>
-        {geoJSONFeatures.map(({ id, geometry }) => {
-          <path
-            key={id}
-            d={pathGenerator(geometry)}
-            fill={fill}
-            stroke={stroke}
-          />;
-        })}
+        {isMultiLineString
+          ? geoJSON.coordinates.map((array, index) => {
+              return (
+                <path
+                  key={index}
+                  d={pathGen({
+                    type: "LineString",
+                    coordinates: array,
+                  })}
+                  {...pathProps}
+                  className="hover:fill-green-400"
+                />
+              );
+            })
+          : geoJSON.features.map(({ id, geometry }) => {
+              return (
+                <path
+                  key={id}
+                  d={pathGen(geometry)}
+                  {...pathProps}
+                  className="hover:fill-green-400"
+                />
+              );
+            })}
       </g>
     </svg>
   );
