@@ -3,10 +3,10 @@ import { conicAlbers } from "@/app/_constants/path-generators";
 import { albersNation } from "@/app/_constants/geojson-features.js";
 import { Basemap } from "../Basemap";
 
-export const SolidAlbersUSNation = () => (
+export const AlbersConusNation = () => (
   <Basemap
     geoJSON={albersNation}
     pathGen={conicAlbers}
-    pathProps={{ fill: "red" }}
+    pathProps={{ stroke: "red" }}
   />
 );
