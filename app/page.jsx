@@ -1,10 +1,10 @@
 "use client";
-import { BackgroundMap } from "./components";
+import { SolidAlbersUSNation } from "@/app/components/maps";
 
 export default function Home() {
-	return (
-		<main className='flex-1'>
-			<BackgroundMap />
-		</main>
-	);
+  return (
+    <main className="flex-1">
+      <SolidAlbersUSNation />
+    </main>
+  );
 }
