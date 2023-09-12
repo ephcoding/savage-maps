@@ -15,82 +15,23 @@ import {
   geoTransverseMercator,
   geoEqualEarth,
   geoNaturalEarth1,
-} from "d3";
+} from "d3-geo";
 
 // -- Azimuthal Projections
-export const geoAzimuthalEqualAreaPathGenerator = () => {
-  const projection = geoAzimuthalEqualArea();
-  return geoPath(projection);
-};
-
-export const geoAzimuthalEquidistantPathGenerator = () => {
-  const projection = geoAzimuthalEquidistant();
-  return geoPath(projection);
-};
-
-export const geoGnomonicPathGenerator = () => {
-  const projection = geoGnomonic();
-  return geoPath(projection);
-};
-
-export const geoOrthographicPathGenerator = () => {
-  const projection = geoOrthographic();
-  return geoPath(projection);
-};
-
-export const geoStereographicPathGenerator = () => {
-  const projection = geoStereographic();
-  return geoPath(projection);
-};
-
+export const azmEqualArea = geoPath(geoAzimuthalEqualArea());
+export const azmEquidistant = geoPath(geoAzimuthalEquidistant());
+export const azmGnomonic = geoPath(geoGnomonic());
+export const azmOrthographic = geoPath(geoOrthographic());
+export const azmStereographic = geoPath(geoStereographic());
 // -- Conic Projections
-export const geoConicConformalPathGenerator = () => {
-  const projection = geoConicConformal();
-  return geoPath(projection);
-};
-
-export const geoConicEqualAreaPathGenerator = () => {
-  const projection = geoConicEqualArea();
-  return geoPath(projection);
-};
-
-export const geoConicEquidistantPathGenerator = () => {
-  const projection = geoConicEquidistant();
-  return geoPath(projection);
-};
-
-export const geoAlbersPathGenerator = () => {
-  const projection = geoAlbers();
-  return geoPath(projection);
-};
-
-export const geoAlbersUsaPathGenerator = () => {
-  const projection = geoAlbersUsa();
-  return geoPath(projection);
-};
-
+export const conicAlbers = geoPath(geoAlbers());
+export const conicAlbersUsa = geoPath(geoAlbersUsa());
+export const conicConformal = geoPath(geoConicConformal());
+export const conicEqualArea = geoPath(geoConicEqualArea());
+export const conicEquidistant = geoPath(geoConicEquidistant());
 // -- Cylindrical Projections
-export const geoEquirectangularPathGenerator = () => {
-  const projection = geoEquirectangular();
-  return geoPath(projection);
-};
-
-export const geoMercatorPathGenerator = () => {
-  const projection = geoMercator();
-  return geoPath(projection);
-};
-
-export const geoTransverseMercatorPathGenerator = () => {
-  const projection = geoTransverseMercator();
-  return geoPath(projection);
-};
-
-export const geoEqualEarthPathGenerator = () => {
-  const projection = geoEqualEarth();
-  return geoPath(projection);
-};
-
-export const geoNaturalEarth1PathGenerator = () => {
-  const projection = geoNaturalEarth1();
-  return geoPath(projection);
-};
+export const cylEqualEarth = geoPath(geoEqualEarth());
+export const cylEquirectangular = geoPath(geoEquirectangular());
+export const cylMercator = geoPath(geoMercator());
+export const cylNaturalEarth1 = geoPath(geoNaturalEarth1());
+export const cylTransverseMercator = geoPath(geoTransverseMercator());
