@@ -1,10 +1,20 @@
 "use client";
-import { SolidAlbersUSNation } from "@/app/components/maps";
+import {
+  AlbersConusNation,
+  AlbersUSACounties,
+  AlbersUSAStates,
+  AzimuthalEqualAreaCountries,
+  EqualEarthCountries,
+} from "@/app/components/maps";
 
 export default function Home() {
   return (
     <main className="flex-1">
-      <SolidAlbersUSNation />
+      <AlbersConusNation />
+      <AlbersUSAStates />
+      <AlbersUSACounties />
+      <AzimuthalEqualAreaCountries />
+      <EqualEarthCountries />
     </main>
   );
 }
