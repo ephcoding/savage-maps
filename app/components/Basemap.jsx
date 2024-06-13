@@ -1,11 +1,11 @@
 export const Basemap = ({
   geoJSON,
-  height = 610,
   pathGen,
   pathProps = {},
+  height = 610,
   width = 975,
 }) => {
-  geoJSON && console.log("geoJSON:\n", geoJSON);
+  geoJSON && console.log("geoJSON:\n", geoJSON.type);
 
   const isMultiLineString = geoJSON.type === "MultiLineString";
 
@@ -22,19 +22,11 @@ export const Basemap = ({
                     coordinates: array,
                   })}
                   {...pathProps}
-                  className="hover:fill-green-400"
                 />
               );
             })
           : geoJSON.features.map(({ id, geometry }) => {
-              return (
-                <path
-                  key={id}
-                  d={pathGen(geometry)}
-                  {...pathProps}
-                  className="hover:fill-green-400"
-                />
-              );
+              return <path key={id} d={pathGen(geometry)} {...pathProps} />;
             })}
       </g>
     </svg>
