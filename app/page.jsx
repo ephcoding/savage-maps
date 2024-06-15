@@ -1,5 +1,4 @@
 "use client";
-import { Basemap } from "./components";
 import {
   NaturalEarthAzmEqualArea,
   NaturalEarthAzmEquidistant,
@@ -17,22 +16,20 @@ import {
 export default function Home() {
   return (
     <main>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-4">
         <NaturalEarthAzmEqualArea />
         <NaturalEarthAzmEquidistant />
         <NaturalEarthAzmGnomonic />
-      </div>
-      <div className="grid grid-cols-3">
         <NaturalEarthAzmOrthographic />
+      </div>
+      <div className="grid grid-cols-4">
         <NaturalEarthConicConformal />
         <NaturalEarthConicEqualArea />
-      </div>
-      <div className="grid grid-cols-3">
         <NaturalEarthConicEquidistant />
+      </div>
+      <div className="grid grid-cols-4">
         <NaturalEarthCylEquirectangular />
         <NaturalEarthCylMercator />
-      </div>
-      <div className="grid grid-cols-3">
         <NaturalEarthCylNaturalEarth1 />
         <NaturalEarthCylTransverseMercator />
       </div>
